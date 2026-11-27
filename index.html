@@ -1,0 +1,2092 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111317">
+<meta name="description" content="Цифровая выставка о повседневной жизни и тыле Москвы в 1941–1942 годах. Хронология, карта, архивные документы и мультимедиа.">
+<title>Москва в тылу · 1941–1942</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:dark;--ink:#111317;--slate:#1b1f26;--well:#15181d;--paper:#eae3d2;--chalk:#f2eee5;--muted:#bebbb3;--red:#9e2a2b;--light-red:#d28578;--brass:#c5a059;--line:#ffffff24;--display:'Cormorant Garamond',Georgia,'Times New Roman',serif;--body:'PT Sans','Segoe UI',Arial,sans-serif;--mono:'PT Mono','Courier New',monospace;--gutter:clamp(1.25rem,6vw,6rem);--top:70px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--top) + 1.3rem)}
+body{margin:0;background:var(--ink);color:var(--chalk);font:1rem/1.65 var(--body)}
+button,select{font:inherit;color:inherit}button{cursor:pointer}a{color:inherit;text-underline-offset:.25em}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--brass);outline-offset:4px}
+h1,h2,h3,p,figure,blockquote{margin:0}h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04}p+p{margin-top:.8rem}button[hidden],[hidden]{display:none!important}
+.wrap{width:min(100%,1440px);margin:auto;padding-inline:var(--gutter)}.section{padding-block:clamp(4.4rem,8vw,8rem);border-top:1px solid var(--line)}.section h2{font-size:clamp(2.65rem,5.5vw,5.4rem);letter-spacing:-.045em}.section h3{font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.025em}.section-head{margin-bottom:2.5rem;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(16rem,.7fr);column-gap:2rem;align-items:end}.section-head p{color:var(--muted);max-width:43ch}.index{display:block;color:var(--brass);font: .71rem/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.7rem}.micro{font:.72rem/1.5 var(--mono);letter-spacing:.055em}.source{display:inline-block;color:var(--brass);font-size:.91rem;margin-top:1rem}.quiet{color:var(--muted)}.skip{position:fixed;top:.5rem;left:.5rem;z-index:20;background:var(--paper);color:#181510;padding:.6rem 1rem;transform:translateY(-150%)}.skip:focus{transform:none}
+.mast{position:fixed;inset:0 0 auto;z-index:10;background:#111317f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.mast-inner{max-width:1600px;min-height:var(--top);margin:auto;padding-inline:clamp(1.1rem,3.5vw,3.6rem);display:flex;align-items:center;justify-content:space-between;gap:1.4rem}.brand{display:inline-flex;gap:.72rem;align-items:center;text-decoration:none;white-space:nowrap}.brand strong{font-family:var(--display);font-size:1.26rem;line-height:1;display:block}.brand small{display:block;color:var(--brass);font:.62rem/1.5 var(--mono);letter-spacing:.14em;margin-top:.2rem}.brand-icon{color:var(--brass);width:31px;height:34px}.nav{display:flex;align-items:center;gap:clamp(.8rem,2.2vw,2.2rem);font-size:.9rem}.nav a,.side a{text-decoration:none;color:var(--muted)}.nav a[aria-current],.nav a:hover,.side a:hover{color:var(--chalk)}.nav a[aria-current]{box-shadow:0 2px var(--brass)}.sound{font:.72rem/1.2 var(--mono);background:transparent;border:1px solid var(--line);padding:.63rem .72rem;display:inline-flex;align-items:center;gap:.45rem;white-space:nowrap}.sound svg{width:16px;height:16px;color:var(--brass)}.sound[aria-pressed=true]{border-color:var(--brass)}.progress{position:absolute;inset:auto 0 -1px;height:2px;background:var(--brass);transform:scaleX(0);transform-origin:left;pointer-events:none}.side{position:fixed;right:1rem;top:50%;transform:translateY(-50%);z-index:5;display:grid;gap:.68rem}.side a{display:grid;width:25px;height:26px;place-items:center;color:var(--muted);font:.65rem var(--mono);border:1px solid transparent}.side a[aria-current]{color:var(--brass);border-color:#c5a05977;background:var(--ink)}
+.hero{position:relative;min-height:clamp(640px,94svh,1050px);display:grid;align-items:center;isolation:isolate;padding:calc(var(--top) + 3rem) 0 6rem;overflow:hidden;background:radial-gradient(ellipse at 76% 62%,#465663,#20262f 48%,#111317 85%)}.scenery,.scenery canvas,.hero-shade{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.scenery{z-index:-3}.hero-shade{z-index:-1;background:linear-gradient(90deg,#101216f5 0%,#11151cd4 29%,#11151c31 64%,#11151c08),linear-gradient(0deg,#111317 0%,#11131705 31%)}.hero-copy{position:relative;max-width:50rem}.hero .index{display:flex;align-items:center;gap:.85rem;margin-bottom:1.5rem}.hero .index::before{content:'';width:2rem;height:1px;background:var(--brass)}.hero h1{font-size:clamp(3.6rem,8.7vw,9.4rem);letter-spacing:-.062em;line-height:.84;text-shadow:0 6px 35px #11131762}.hero h1 span{display:block;color:#f5f0e2}.hero h1 small{display:block;font-size:.52em;letter-spacing:.015em;color:var(--brass);margin-top:.32em}.hero .deck{font:clamp(1.12rem,2vw,1.55rem)/1.3 var(--body);margin-top:1.8rem;max-width:31ch}.hero .dedication{color:#d1ccc1;max-width:46ch;margin-top:.65rem;font-size:.96rem}.hero-actions{margin-top:2.1rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem}.primary,.outline{display:inline-flex;min-height:44px;align-items:center;justify-content:center;gap:.7rem;text-decoration:none;border:1px solid transparent;padding:.67rem 1.05rem;font-weight:600}.primary{background:var(--paper);color:#201b14}.primary:hover{background:#fff5de}.outline{background:#13161b44;border-color:var(--line)}.outline:hover{border-color:var(--brass)}.hero-bottom{position:absolute;bottom:1.5rem;inset-inline:var(--gutter);display:flex;justify-content:space-between;gap:1rem;color:#d0c7b9;border-top:1px solid var(--line);padding-top:.8rem}.hero-bottom span:last-child{text-align:right}
+.timeline-controls{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-block:1px solid var(--line)}.timeline-controls button{padding:1.1rem .45rem;text-align:left;background:transparent;border:0;border-left:1px solid var(--line);font:clamp(.64rem,1.1vw,.8rem)/1.5 var(--mono);color:var(--muted)}.timeline-controls button:first-child{border-left:0}.timeline-controls button[aria-selected=true]{color:var(--chalk);box-shadow:0 -3px var(--brass) inset;background:#c5a05913}.timeline-controls button:hover,.tabs button:hover{color:var(--chalk)}.time-panel{display:grid;grid-template-columns:.75fr 1.25fr;align-items:center;gap:2rem;padding:2rem 0;min-height:19rem;border-bottom:1px solid var(--line)}.time-art{aspect-ratio:1.9;background:#20242a;overflow:hidden}.time-art svg{display:block;width:100%;height:100%}.time-panel .index{margin-bottom:.5rem}.time-panel p{margin-top:.75rem;max-width:66ch;color:var(--muted)}
+.hall-section{background:var(--well)}.map-shell{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(16rem,1fr);border:1px solid var(--line);background:#1c2227;margin-bottom:3.1rem}.map-stage{min-height:390px;position:relative;overflow:hidden;background:#202b30;isolation:isolate}.map-stage canvas,.pins{position:absolute;inset:0;width:100%;height:100%}.map-aside{padding:1.5rem;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:1rem}.map-aside h3{font-size:1.85rem}.map-aside p{font-size:.95rem}.map-aside .source{margin-top:0}.map-coords{position:absolute;top:.8rem;left:.8rem;z-index:2;background:#151b20dd;color:var(--paper);padding:.35rem .6rem;pointer-events:none}.pin{position:absolute;transform:translate(-50%,-50%);width:35px;height:35px;border-radius:50%;background:#14191e;border:1px solid #c5a059;color:#f0deba;font:.67rem var(--mono);box-shadow:0 0 12px #c5a05950}.pin:hover,.pin[aria-pressed=true]{background:var(--brass);color:#181510;z-index:1}.map-list{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto}.map-list button{background:transparent;border:1px solid var(--line);font-size:.8rem;padding:.25rem .55rem}.map-list button[aria-pressed=true]{border-color:var(--brass);color:#f4dcae}
+.tabs{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1rem}.tabs button{border:1px solid var(--line);background:transparent;color:var(--muted);padding:.55rem .85rem}.tabs button[aria-selected=true]{background:var(--brass);border-color:var(--brass);color:#181510}.hall-panel{border:1px solid var(--line);background:#1a1e24;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(13rem,.65fr);min-height:19rem}.hall-text{padding:clamp(1.25rem,3.5vw,2.6rem)}.hall-text h3{margin-bottom:.85rem}.hall-text p{max-width:66ch}.hall-visual{align-self:stretch;border-left:1px solid var(--line);background:#242a31;display:grid;place-items:center;overflow:hidden}.hall-visual svg{width:100%;height:100%;max-height:330px}.hall-text table{border-collapse:collapse;width:100%;max-width:530px;margin:1rem 0;text-align:left}.hall-text caption{text-align:left;color:var(--brass);font-size:.9rem}.hall-text th,.hall-text td{padding:.35rem .25rem;border-bottom:1px solid var(--line)}.artefacts{margin-top:1rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem}.artefacts button{background:#12161b;border:1px solid var(--line);padding:.55rem .25rem;color:var(--muted);font-size:.86rem}.artefacts button[aria-pressed=true]{border-color:var(--brass);color:var(--chalk)}.tech-note{margin-top:.8rem;padding:.65rem .85rem;border-left:2px solid var(--brass);background:#111317}
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.person{display:grid;grid-template-columns:82px minmax(0,1fr);gap:1rem;padding:1.25rem;border-top:1px solid var(--line);background:#191d22}.person svg{width:100%;background:#222831}.person h3{font-size:1.75rem;margin-bottom:.45rem}.person p{font-size:.95rem;color:var(--muted)}
+.archive-section{background:#ded6c2;color:#211d17;color-scheme:light}.archive-section .index{color:#693b22}.archive-section .section-head p{color:#55493b}.archive-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem}.archive-card{text-align:left;background:#ece4d2;color:#211d17;border:1px solid #64523e48;padding:.65rem;display:flex;flex-direction:column;min-width:0;gap:.55rem}.archive-card:hover{border-color:#8a382b}.archive-card > svg{display:block;width:100%;height:auto;aspect-ratio:1.1;background:#c8b89b}.archive-card strong{font:600 1.24rem/1.05 var(--display)}.archive-card small{color:#5e4b3a;font:.69rem/1.5 var(--mono)}.archive-card span{color:#703526;font-size:.86rem;margin-top:auto}
+dialog{border:1px solid #7b5c40;padding:0;width:min(900px,calc(100% - 1.4rem));max-height:calc(100% - 1.4rem);background:#ebe2cf;color:#231c15;color-scheme:light;overflow:auto}dialog::backdrop{background:#0a0b0ee3}.dialog-bar{display:flex;position:sticky;top:0;z-index:2;justify-content:space-between;align-items:center;gap:1rem;padding:.7rem 1rem;background:#e6d8be;border-bottom:1px solid #6b533750}.dialog-bar button{background:#e6d8be;border:1px solid #74624d;padding:.3rem .7rem}.doc-body{display:grid;grid-template-columns:1fr .78fr;gap:1.4rem;padding:1.25rem}.doc-sheet{min-height:18rem;padding:clamp(.8rem,3vw,2rem);color:#221a12;background:radial-gradient(ellipse at 29% 11%,#fff6da85,transparent 57%),repeating-linear-gradient(6deg,#7b562409 0 1px,transparent 1px 4px),#daca9f;border:1px solid #8c745b60;box-shadow:inset 0 0 24px #6a4b284f;font:1.02rem/1.43 Georgia,serif;position:relative}.doc-sheet h3,.doc-details h3{font-size:2rem;margin:.5rem 0 1rem}.doc-sheet .doc-mast{border-block:3px double #382819;text-align:center;padding:.45rem 0;font:700 clamp(1.25rem,3.4vw,2.3rem)/1 var(--display)}.doc-sheet blockquote{font-style:italic;border-left:2px solid #7b3f2e;padding-left:.7rem;margin:.85rem 0}.doc-sheet button,.doc-details button{color:#4f2315;background:#f6e3b3;border:1px solid #725335;padding:.2rem .48rem}.doc-sheet button[aria-pressed=true]{background:#723c2e;color:#fff4d8}.doc-details .source{color:#722d20}.doc-details p{font-size:.95rem}.annotation{padding:.75rem;margin-top:.85rem;background:#ad895b34;border-left:2px solid #874937}.coupon-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;margin:1rem 0}.coupon-grid span,.coupon-grid button{border:1px dashed #644b31;text-align:center;padding:.2rem 0;font:.72rem/1.4 var(--mono)}.stamp{font:.64rem var(--mono);display:inline-block;border:2px solid #953f358e;color:#713426;padding:.4rem;letter-spacing:.1em;transform:rotate(-6deg);margin-top:.65rem}.news-copy{columns:2;column-gap:1rem;column-rule:1px solid #6a523267;font-size:.84rem;margin-top:.7rem}.news-copy>*{break-inside:avoid}
+.media-section{background:#181b20}.media-stack{display:grid;gap:1.3rem}.exhibit{border:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-width:0}.exhibit-visual{padding:clamp(.8rem,2.5vw,1.7rem);min-width:0;background:#20242b;display:grid;align-items:center;align-content:center}.exhibit-copy{padding:clamp(1rem,3vw,2rem);min-width:0}.exhibit-copy h3{margin-bottom:.7rem}.exhibit-copy p{color:var(--muted)}.device{border:1px solid #9b7b52;padding:.87rem;background:repeating-linear-gradient(3deg,#8e664c14 0 1px,transparent 1px 4px),#3b2923;box-shadow:inset 0 0 20px #171211,0 13px 28px #0005}.radio-dial{background:#191a16;border:1px solid #947245;display:block;width:100%;height:105px}.device-controls{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem;align-items:center}.device-controls button,.device-controls select{min-height:38px;border:1px solid #a0855e;background:#211c19;color:#f4e5ca;padding:.36rem .58rem;font-size:.86rem}.device-controls button[aria-pressed=true]{background:#e7cc91;color:#261a10}.tuner-text{margin-top:.75rem;padding:1rem;border:1px solid var(--line);background:#111317;color:#f1e0bf;min-height:9rem}.tuner-text blockquote{font-family:var(--mono);font-size:.9rem}.gallery{position:relative;min-height:280px;overflow:hidden;display:grid;place-items:center;perspective:700px}.gallery button{width:49%;max-width:245px;aspect-ratio:.76;border:1px solid #8f7153;background:#ddc598;padding:0;box-shadow:0 14px 25px #0008;position:absolute;transition:transform .5s,opacity .4s;transform:translateX(calc(var(--offset)*66%)) translateZ(calc(var(--depth)*-85px)) rotateY(calc(var(--offset)*-25deg));opacity:var(--opacity);z-index:var(--layer)}.gallery button svg{display:block;width:100%;height:100%}.gallery-actions{display:flex;gap:.6rem;align-items:center;margin-top:1rem}.gallery-actions .outline{min-height:38px;padding:.3rem .7rem}.film{background:#111213;padding:.75rem;border:1px solid #625245}.film canvas{width:100%;aspect-ratio:16/9;display:block;background:#2a2119}.film-controls{display:flex;gap:.55rem;align-items:center;margin-top:.7rem}.film-controls input{flex:1;width:4rem;accent-color:var(--brass)}.film-time{white-space:nowrap}.film-controls .outline{min-height:38px;padding:.3rem .65rem}
+.foot{background:#111317}.foot-grid{display:grid;grid-template-columns:1.45fr .72fr;gap:3rem}.bibliography{list-style:none;padding:0;margin:0;counter-reset:bib}.bibliography li{counter-increment:bib;padding:.7rem .3rem .7rem 2.4rem;border-bottom:1px solid var(--line);position:relative}.bibliography li::before{content:counter(bib,decimal-leading-zero);position:absolute;left:0;top:.95rem;color:var(--brass);font:.72rem var(--mono)}.bibliography a{color:var(--paper)}.passport{border-top:2px solid var(--brass);padding:1.1rem;background:#20242b;align-self:start}.passport dl{margin-bottom:0}.passport dt{color:var(--brass);font-size:.82rem}.passport dd{margin:0 0 .55rem}.passport h3{margin-bottom:.6rem}.foot-end{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem}
+@media(max-width:1100px){.side{display:none}.archive-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.nav{gap:.9rem}.map-stage{min-height:360px}}
+@media(max-width:820px){:root{--top:101px}.mast-inner{min-height:var(--top);display:grid;grid-template-columns:1fr auto;gap:0 .5rem;align-content:center}.nav{grid-column:1/-1;grid-row:2;overflow:auto;white-space:nowrap;padding:.55rem .12rem .15rem;scrollbar-width:thin}.hero{min-height:720px}.hero-shade{background:linear-gradient(90deg,#111317e0,#11131740),linear-gradient(0deg,#111317,transparent 34%)}.section-head{grid-template-columns:1fr;gap:.65rem}.map-shell{grid-template-columns:minmax(0,1.6fr) minmax(13rem,1fr)}.map-aside{padding:1rem}.map-stage{min-height:360px}.person{grid-template-columns:56px minmax(0,1fr);padding:1rem;gap:.75rem}.foot-grid{gap:1.2rem}}
+@media(max-width:600px){.hero{min-height:670px}.hero-bottom{font-size:.58rem}.timeline-controls{grid-template-columns:repeat(4,minmax(0,1fr))}.timeline-controls button{border-top:1px solid var(--line)}.time-panel,.map-shell,.hall-panel,.exhibit,.foot-grid,.doc-body{grid-template-columns:1fr}.map-aside,.hall-visual{border-left:0;border-top:1px solid var(--line)}.map-stage{min-height:330px}.people{grid-template-columns:1fr}.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}.artefacts{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-bottom span:last-child{max-width:14ch}.gallery{min-height:258px}}
+.map-label{display:none;position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font:.69rem Georgia,serif;color:#f5e8c8;text-shadow:0 1px 4px #000,0 0 7px #000;pointer-events:none}.has-3d .map-label{display:block}.has-3d #map-flat{visibility:hidden}
+.radio-face{display:grid;grid-template-columns:1fr 1.8fr;gap:.85rem;align-items:stretch}.radio-grille{min-height:126px;border:1px solid #b1915c;border-radius:42% 42% 12% 12%;background:radial-gradient(ellipse at 50% 50%,#25191355,#16110d),repeating-linear-gradient(0deg,#251b15 0 4px,#9b7953 5px 6px,#1a1510 7px 9px);box-shadow:inset 0 0 12px #0b0806}.radio-screen{min-width:0}.dial-scale{display:flex;justify-content:space-between;color:#d4b477;padding:.22rem .4rem;background:#251f19;border:1px solid #8b7049;border-top:0}.status{margin-top:.7rem;font-size:.77rem!important}.tuner-text p{font-size:.91rem;margin-top:.6rem}.tuner-text mark{background:#dfbb7a;color:#251b0e}.poster-caption{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line)}.poster-caption strong{font:600 1.52rem/1.15 var(--display);display:block}.poster-caption p{font-size:.9rem;margin-top:.35rem}.poster-full{display:grid;place-items:center;background:#b8a07045;padding:.55rem}.poster-full svg{display:block;max-width:100%;width:min(100%,330px);height:auto;box-shadow:0 5px 20px #44342260}.film-perf{height:9px;background:repeating-linear-gradient(90deg,transparent 0 9px,#ab8b64 9px 14px,transparent 14px 22px);margin:3px 0;border-radius:1px;opacity:.6}.film canvas{filter:sepia(.8) saturate(.74)}.film-chapter{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line)}.film-chapter strong{color:var(--paper)}.film-time{color:var(--paper)}.dialog-bar strong{font:600 1.3rem/1.15 var(--display)}
+@media(min-width:1101px){.archive-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(max-width:390px){.radio-face{grid-template-columns:1fr}.radio-grille{display:none}.gallery-actions{flex-wrap:wrap}}
+.map-experience{--map-height:390px}
+.map-experience .map-stage{height:var(--map-height);min-height:0}
+.map-experience .map-aside{height:var(--map-height);overflow-y:auto;scrollbar-width:thin}
+.map-surface{position:absolute;inset:0;transition:filter .35s ease,transform .35s ease;transform-origin:center}
+.map-experience[data-view=detail] .map-surface{filter:blur(6px) brightness(.82);transform:scale(1.035)}
+.map-overview-info{display:flex;flex-direction:column;flex:1;gap:1rem}
+.map-diorama{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility 0s linear .35s}
+.map-experience[data-view=detail] .map-diorama{opacity:1;visibility:visible;transition-delay:0s}
+.diorama-back{position:absolute;z-index:3;top:.7rem;left:.7rem;min-height:38px;padding:.35rem .62rem;background:#151b20ee;border-color:#d0b58055}
+.diorama-stage{position:absolute;inset:42px 0;touch-action:none;cursor:grab}
+.diorama-stage:active{cursor:grabbing}
+.diorama-stage canvas{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none}
+.diorama-stage:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+.diorama-side{min-width:0;display:flex;flex-direction:column;gap:.67rem}
+.diorama-side .index{margin-bottom:0}
+.diorama-side h3{font-size:clamp(1.55rem,2.5vw,2.2rem)}
+.diorama-side p{font-size:.9rem;line-height:1.5;color:var(--muted)}
+.diorama-side .source{margin-top:0}
+.diorama-side details p{margin-top:.4rem}
+.diorama-sources{display:flex;flex-wrap:wrap;gap:.4rem 1rem}
+.diorama-controls,.diorama-modes,.diorama-points{display:flex;flex-wrap:wrap;align-items:center;gap:.42rem}
+.diorama-controls{position:absolute;z-index:3;bottom:.55rem;left:.7rem}
+.diorama-controls button,.diorama-modes button,.diorama-points button{min-height:33px;padding:.25rem .5rem;background:#171c21ee;border:1px solid #d0b58055;font-size:.8rem}
+.diorama-controls button:disabled{opacity:.47;cursor:default}
+.diorama-modes button[aria-pressed=true],.diorama-points button[aria-pressed=true],.diorama-pin[aria-pressed=true]{background:var(--brass);color:#211910}
+.diorama-pin{position:absolute;z-index:2;transform:translate(-50%,-50%);width:34px;height:34px;border:1px solid var(--brass);border-radius:50%;background:#161b20;color:#ffedc3;font:.77rem var(--mono);box-shadow:0 2px 11px #000b}
+.diorama-detail{padding:.52rem .66rem;border-left:2px solid var(--brass);background:#14181c}
+
+.radio-rest{perspective:950px;padding:.6rem .65rem 1rem .22rem}
+.device{position:relative;transform-style:preserve-3d;transform:rotateX(var(--radio-x,4deg)) rotateY(var(--radio-y,-6deg));transition:transform .23s ease;box-shadow:0 18px 27px #0007}
+.device-depth{position:absolute;inset:.15rem -.72rem -.68rem .48rem;transform:translateZ(-13px);border:1px solid #997950;background:repeating-linear-gradient(2deg,#8e634821 0 1px,transparent 1px 5px),#261a15;pointer-events:none}
+.radio-grille{position:relative;display:grid;place-items:center;overflow:hidden}
+.radio-grille::after{content:'';width:73%;height:80%;border-radius:50%;background:radial-gradient(ellipse,#d5a75778,#a46e2300 71%);opacity:var(--radio-signal,0);pointer-events:none}
+.radio-hardware{display:flex;align-items:center;gap:.7rem;margin-top:.65rem;min-height:65px}
+.radio-knob{width:59px;height:59px;flex:none;border:0;border-radius:50%;background:#1d1713;box-shadow:0 0 0 1px #ad9266,3px 4px 0 2px #170f0b,0 7px 11px #140b07;display:grid;place-items:center;touch-action:none;cursor:ew-resize;transform:translateZ(8px)}
+.radio-knob-face{width:50px;height:50px;border-radius:inherit;border:1px solid #c39d62;display:block;position:relative;background:radial-gradient(circle at 34% 26%,#806445,#503929 46%,#2d2119 78%),repeating-conic-gradient(#fff1 0 6deg,#0002 6deg 10deg);transform:rotate(var(--dial-angle,-110deg));transition:transform .19s ease;pointer-events:none}
+.radio-knob-face::after{content:'';position:absolute;left:calc(50% - 1px);top:4px;width:2px;height:10px;background:#eace90;box-shadow:0 0 3px #fcce79}
+.radio-tuning-label{display:grid;gap:.12rem;color:#f0e2c2}.radio-tuning-label span:last-child{color:#d8bb84;font-size:.81rem}
+
+.archive-desk{min-width:0;padding:.68rem;background:repeating-linear-gradient(3deg,#6a503730 0 1px,transparent 1px 8px),radial-gradient(ellipse at 45% 30%,#8a6b46,#463222 86%);border:1px solid #705132}
+.archive-viewport{perspective:1000px;padding:.3rem;max-height:min(61vh,720px);overflow:auto;scrollbar-color:#a4875d #59402b}
+.archive-leaf{display:grid;position:relative;transform-style:preserve-3d;transition:transform .48s ease}
+.archive-leaf.is-turned{transform:rotateY(180deg)}
+.archive-leaf .doc-sheet{grid-area:1/1;backface-visibility:hidden;overflow-wrap:anywhere}
+.archive-leaf .doc-sheet[inert]{pointer-events:none}
+.archive-back{transform:rotateY(180deg)}
+.archive-back .coupon-grid{opacity:.53}
+.archive-desk.is-zoom .archive-leaf{width:118%}
+.archive-desk.is-zoom .archive-leaf .doc-sheet{font-size:1.2em;padding:clamp(.68rem,2vw,1.25rem)}
+.archive-desk.is-zoom .archive-leaf .doc-mast{font-size:clamp(1.42rem,3.2vw,2.62rem)}
+.archive-desk.is-zoom .archive-leaf h3{font-size:2.22rem}
+.archive-desk.is-zoom .archive-leaf .coupon-grid :is(span,button){font-size:.88rem}
+.archive-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.36rem;margin-top:.56rem}
+.archive-tools button{min-height:40px;color:#34231b;background:#ecdfbd;border:1px solid #776042;padding:.32rem .53rem;font-size:.9rem}
+.archive-tools button:disabled{opacity:.55;cursor:default}
+.archive-tools output{color:#f5e3bf;font-size:.83rem;margin-inline:.18rem}
+.hero-scene-controls{display:flex;align-items:center;gap:.7rem}
+.hero-motion{background:#12161bd6;border:1px solid #bda07755;color:#efdfbb;padding:.3rem .48rem;min-height:34px;font:inherit}
+.hero-motion[aria-pressed=true]{border-color:var(--brass)}
+@media(max-width:600px){.hero-scene-controls{align-items:flex-end;flex-direction:column;gap:.2rem}.hero-scene-controls span{max-width:22ch!important}}
+@media(max-width:820px){
+ .map-experience{--map-height:360px}
+}
+@media(max-width:600px){
+ .map-experience{--map-height:330px}
+ .map-experience .map-aside{height:auto}
+}
+@media(max-width:420px){
+ .diorama-pin{width:30px;height:30px}
+ .radio-rest{padding-right:.5rem}.device{transform:rotateY(-3deg)}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#timeline">К содержанию выставки</a>
+<header class="mast">
+ <div class="mast-inner">
+  <a class="brand" href="#home" aria-label="Москва в тылу, к началу выставки"><svg class="brand-icon" viewBox="0 0 32 36" fill="none" aria-hidden="true"><path d="M2 32h28M4 29h24M6 28V18l4-4 3 4V9l3-6 3 6v9l3-4 4 4v10M10 25v-5m6 5v-8m6 8v-5" stroke="currentColor" stroke-width="1.2"/><path d="M16 0v4M14 2h4" stroke="currentColor"/></svg><span><strong>Москва в тылу</strong><small>1941–1942</small></span></a>
+  <nav class="nav" aria-label="Разделы выставки"><a href="#timeline">Хронология</a><a href="#halls">Залы и карта</a><a href="#people">Герои</a><a href="#archive">Архив</a><a href="#media">Мультимедиа</a><a href="#sources">Источники</a></nav>
+  <button type="button" id="sound" class="sound" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 7h4l4-4v14l-4-4H2zM13 6c2 2 2 6 0 8m3-11c4 4 4 10 0 14" stroke="currentColor" stroke-width="1.25"/></svg><span>Звук выкл.</span></button>
+ </div><div class="progress" aria-hidden="true"></div>
+</header>
+<nav class="side" aria-label="Маршрут экскурсии"><a href="#home" title="Начало" aria-label="Начало">01</a><a href="#timeline" title="Хронология" aria-label="Хронология">02</a><a href="#halls" title="Залы и карта" aria-label="Залы и карта">03</a><a href="#people" title="Герои" aria-label="Герои">04</a><a href="#archive" title="Архив" aria-label="Архив">05</a><a href="#media" title="Мультимедиа" aria-label="Мультимедиа">06</a><a href="#sources" title="Источники" aria-label="Источники">07</a></nav>
+<main>
+ <section id="home" class="hero" aria-labelledby="title">
+  <div class="scenery" aria-hidden="true"><canvas id="hero-flat"></canvas><canvas id="hero-3d" hidden></canvas><canvas id="hero-snow"></canvas></div><div class="hero-shade"></div>
+  <div class="wrap"><div class="hero-copy">
+   <span class="index">Цифровая выставка</span>
+   <h1 id="title"><span>Москва<br>в тылу</span><small>1941–1942</small></h1>
+   <p class="deck">Повседневная жизнь столицы во время Битвы за Москву</p>
+   <p class="dedication">85-летию начала контрнаступления советских войск под Москвой посвящается.</p>
+   <div class="hero-actions"><a class="primary" id="start-tour" href="#timeline">Начать экскурсию <span aria-hidden="true">↓</span></a><a href="#archive">Открыть архив</a></div>
+  </div></div>
+  <div class="hero-bottom micro"><span>Москва, зима 1941 года</span><div class="hero-scene-controls"><span>Ночная диорама · художественная реконструкция</span><button type="button" class="hero-motion" id="hero-motion" aria-pressed="false">Пауза сцены</button></div></div>
+ </section>
+ <section id="timeline" class="section" aria-labelledby="timeline-title"><div class="wrap">
+  <div class="section-head"><div><span class="index">Октябрь 1941 — апрель 1942</span><h2 id="timeline-title">Хронология</h2></div><p>Как менялась жизнь города от массовой эвакуации до весенних работ по восстановлению Москвы.</p></div>
+  <div id="timeline-tabs" class="timeline-controls" role="tablist" aria-label="Даты"></div><div id="timeline-panel" class="time-panel" role="tabpanel"><p>Осенью 1941 года Москва организовала эвакуацию, оборону и снабжение города.</p></div>
+ </div></section>
+ <section id="halls" class="section hall-section" aria-labelledby="halls-title"><div class="wrap">
+  <div class="section-head"><div><h2 id="halls-title">Город, который жил</h2></div><p>Выберите место на карте, чтобы рассмотреть его в 3D. Ниже — шесть залов о жизни города.</p></div>
+  <div class="map-shell map-experience" id="map-experience" data-view="overview">
+   <div class="map-stage" id="map-stage">
+    <div class="map-surface" id="map-overview">
+     <canvas id="map-flat" aria-hidden="true"></canvas><canvas id="map-3d" aria-hidden="true" hidden></canvas>
+     <span class="map-label" data-x=".47" data-z=".2">Кремль</span><span class="map-label" data-x="-3.4" data-z="2.63">Москва-река</span><span class="map-label" data-x="-.31" data-z="-1.71">Садовое кольцо</span>
+     <div class="pins" id="pins"></div><span class="map-coords micro">Москва · схема 1941 года</span>
+    </div>
+    <div class="map-diorama" id="map-diorama" inert>
+     <button type="button" class="outline diorama-back" id="diorama-back"><span aria-hidden="true">←</span> Назад к карте</button>
+     <div class="diorama-stage" id="diorama-stage" tabindex="0" role="group" aria-label="Трёхмерная диорама. Для вращения используйте стрелки"><div id="diorama-stage-points"></div></div>
+     <div class="diorama-controls" aria-label="Управление камерой">
+      <button type="button" data-scene-action="left" aria-label="Повернуть влево">←</button>
+      <button type="button" data-scene-action="right" aria-label="Повернуть вправо">→</button>
+      <button type="button" data-scene-action="closer" aria-label="Приблизить">＋</button>
+      <button type="button" data-scene-action="farther" aria-label="Отдалить">−</button>
+      <button type="button" data-scene-action="reset" aria-label="Восстановить общий вид модели">Общий вид</button>
+     </div>
+    </div>
+   </div>
+   <div class="map-aside" id="map-aside">
+    <div class="map-overview-info" id="map-overview-info">
+     <div><span class="index">Интерактивная карта</span><h3>Тыловая Москва</h3><p>Выберите точку на схеме или название из списка. Садовое кольцо выделено латунным цветом.</p></div>
+     <div id="map-list" class="map-list" aria-label="Точки на карте"></div>
+    </div>
+    <div class="diorama-side" id="map-diorama-info" hidden></div>
+   </div>
+  </div>
+  <div class="tabs" id="hall-tabs" role="tablist" aria-label="Тематические залы"></div><div class="hall-panel" id="hall-panel" role="tabpanel"><div class="hall-text"><h3>Промышленность</h3><p>Промышленные предприятия совмещали эвакуацию оборудования с выполнением военных заказов.</p></div></div>
+ </div></section>
+ <section id="people" class="section" aria-labelledby="people-title"><div class="wrap"><div class="section-head"><div><h2 id="people-title">Люди московского тыла</h2></div><p>Руководители, врачи и рабочие отвечали за разные стороны жизни города.</p></div><div class="people" id="people-grid"><p>В тылу работали заводские бригады, медики, метростроители и добровольцы МПВО.</p></div></div></section>
+ <section id="archive" class="section archive-section" aria-labelledby="archive-title"><div class="wrap"><div class="section-head"><div><h2 id="archive-title">Цифровой архив</h2></div><p>Газеты, дневник, продуктовая карточка и постановление. Откройте экспонат, чтобы прочитать выдержку и перейти к источнику.</p></div><div class="archive-grid" id="archive-grid"><p>Среди документов выставки — постановление об осадном положении и свидетельства повседневной жизни Москвы.</p></div></div></section>
+ <section id="media" class="section media-section" aria-labelledby="media-title"><div class="wrap"><div class="section-head"><div><h2 id="media-title">Слышать и видеть</h2></div><p>Радиосводки, плакатная мастерская и кинозал показывают, как москвичи узнавали о происходящем.</p></div>
+  <div class="media-stack">
+   <article class="exhibit" aria-labelledby="radio-title">
+    <div class="exhibit-visual"><div class="radio-rest"><div class="device" id="radio-cabinet">
+     <div class="device-depth" aria-hidden="true"></div>
+     <div class="radio-face"><div class="radio-grille" id="radio-grille" aria-hidden="true"></div><div class="radio-screen"><canvas id="radio-dial" class="radio-dial" aria-hidden="true"></canvas><div class="micro dial-scale" aria-hidden="true"><span>ДВ</span><span>200</span><span>300</span><span>500</span><span>СВ</span></div></div></div>
+     <div class="radio-hardware"><div id="radio-knob" class="radio-knob" role="slider" tabindex="0" aria-label="Дата сводки" aria-describedby="tuning-hint" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1"><span class="radio-knob-face" aria-hidden="true"></span></div><div class="radio-tuning-label"><span id="knob-date"></span><span id="tuning-hint">Поверните ручку перетаскиванием или стрелками.</span></div></div>
+     <div class="device-controls" id="radio-controls" aria-label="Режим радиоприёмника"><button type="button" data-mode="speech" aria-pressed="false">Сводки</button><button type="button" data-mode="beat" aria-pressed="false">Метроном</button><button type="button" data-mode="off" aria-pressed="true">Тишина</button></div>
+    </div></div></div>
+    <div class="exhibit-copy">
+     <h3 id="radio-title">Голос Совинформбюро</h3><p>Выберите дату и включите чтение. Метроном воспроизводит ровный ритм в 60 ударов в минуту.</p>
+     <div class="device-controls"><label for="broadcast">Сводка</label><select id="broadcast"></select><button type="button" id="radio-play">Читать сводку</button></div>
+     <div class="tuner-text" id="radio-text"></div><p id="radio-status" class="micro status" role="status">Тишина</p>
+    </div>
+   </article>
+   <article class="exhibit" aria-labelledby="poster-title">
+    <div class="exhibit-visual"><div class="gallery" id="poster-gallery" aria-label="Карусель плакатов"></div></div>
+    <div class="exhibit-copy">
+     <h3 id="poster-title">«Окна ТАСС»</h3><p>Художники и авторы текстов готовили плакаты для городских витрин. Цвет наносили слоями через трафареты. Здесь представлены векторные интерпретации четырёх работ.</p>
+     <div id="poster-caption" class="poster-caption" aria-live="polite"></div>
+     <div class="gallery-actions"><button type="button" class="outline" id="poster-prev" aria-label="Предыдущий плакат">←</button><span id="poster-index" class="micro"></span><button type="button" class="outline" id="poster-next" aria-label="Следующий плакат">→</button><button type="button" class="outline" id="poster-open">Рассмотреть</button></div>
+    </div>
+   </article>
+   <article class="exhibit" aria-labelledby="film-title">
+    <div class="exhibit-visual"><div class="film">
+     <div class="film-perf" aria-hidden="true"></div><canvas width="800" height="450" id="film-canvas" role="img" aria-label="Анимированные иллюстрации к кинохронике"></canvas><div class="film-perf" aria-hidden="true"></div>
+     <div class="film-controls"><button type="button" class="outline" id="film-play">Пуск</button><input type="range" min="0" max="28" step=".05" value="0" aria-label="Позиция кинохроники" id="film-seek"><output class="film-time micro" id="film-time" for="film-seek">0:00 / 0:28</output></div>
+    </div></div>
+    <div class="exhibit-copy"><h3 id="film-title">Кинохроника 1941–1942</h3><p>Рисованный фильм по мотивам «Разгрома немецких войск под Москвой» Леонида Варламова и Ильи Копалина. Четыре сцены связывают хронику битвы с повседневной историей города.</p><p class="film-chapter" id="film-chapter" aria-live="polite"></p><div id="film-links"></div></div>
+   </article>
+  </div>
+ </div></section>
+ <footer id="sources" class="section foot" aria-labelledby="sources-title"><div class="wrap"><div class="section-head"><div><h2 id="sources-title">Источники</h2></div><p>Архивные документы, периодика, воспоминания и музейные каталоги.</p></div><div class="foot-grid"><ol class="bibliography" id="bibliography"><li><a href="https://www.prlib.ru/item/1339595">РГАСПИ. Постановление ГКО СССР № 813 от 19 октября 1941 г.</a></li></ol><aside class="passport"><h3>Паспорт работы</h3><p>Конкурсная работа для КИПФИН Финансового университета</p><p>«Страницы народного подвига. Битва за Москву»</p><dl id="project-meta"></dl></aside></div><div class="foot-end micro"><span>Повседневная жизнь и тыл Москвы в 1941–1942 гг.</span><a href="#home">К началу ↑</a></div></div></footer>
+</main>
+<dialog id="lightbox" aria-labelledby="dialog-title"><div class="dialog-bar"><strong id="dialog-title">Архивный экспонат</strong><form method="dialog"><button value="close" autofocus>Закрыть ×</button></form></div><div id="dialog-body" class="doc-body"></div></dialog>
+<script>
+const PROJECT_META = { author: "ФИО участника", group: "Номер группы", supervisor: "ФИО научного руководителя" };
+const $ = selector => document.querySelector(selector);
+const $$ = selector => [...document.querySelectorAll(selector)];
+const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+const clock = () => performance.now();
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+if(navigator.onLine) {
+  const fonts=document.createElement('link');
+  fonts.rel='stylesheet';
+  fonts.href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=PT+Sans:wght@400;700&family=PT+Mono&display=swap';
+  document.head.append(fonts);
+}
+function random(seed) {
+  return () => {
+    seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+    return seed / 4294967296;
+  };
+}
+function escapeHTML(value) {
+  const span = document.createElement('span');
+  span.textContent = value;
+  return span.innerHTML;
+}
+$('#project-meta').innerHTML = [['Участник',PROJECT_META.author],['Группа',PROJECT_META.group],['Научный руководитель',PROJECT_META.supervisor]].map(([name,value]) => `<dt>${name}</dt><dd>${escapeHTML(value)}</dd>`).join('');
+function updateNavigation() {
+  const sections = $$('main > [id]');
+  const active = [...sections].reverse().find(section => section.getBoundingClientRect().top <= innerHeight * .42) || sections[0];
+  const max = document.documentElement.scrollHeight - innerHeight;
+  const atEnd = max > 0 && scrollY >= max - 3;
+  const hash = '#' + (atEnd ? sections.at(-1) : active).id;
+  $$('.mast a, .side a').forEach(link => link.getAttribute('href') === hash ? link.setAttribute('aria-current','location') : link.removeAttribute('aria-current'));
+  $('.progress').style.transform = `scaleX(${max > 0 ? clamp(scrollY / max,0,1) : 0})`;
+}
+let navPending = false;
+function scheduleNavigation() {
+  if (navPending) return;
+  navPending = true;
+  requestAnimationFrame(() => { navPending = false; updateNavigation(); });
+}
+addEventListener('scroll',scheduleNavigation,{passive:true});
+addEventListener('resize',scheduleNavigation);
+updateNavigation();
+
+function surface(canvas, draw, animated = true) {
+  const ctx = canvas.getContext('2d');
+  let width = 1, height = 1, visible = true, frame = 0;
+  function render(time) {
+    frame = 0;
+    draw(ctx,width,height,time);
+    const moving=typeof animated==='function'?animated():animated;
+    if (visible && moving && !reduced.matches && !document.hidden) frame = requestAnimationFrame(render);
+  }
+  function wake() {
+    if (!frame && visible && !document.hidden) frame = requestAnimationFrame(render);
+  }
+  new ResizeObserver(() => {
+    const rect = canvas.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    width = rect.width;
+    height = rect.height;
+    const ratio = Math.min(devicePixelRatio,1.6);
+    canvas.width = Math.round(width * ratio);
+    canvas.height = Math.round(height * ratio);
+    ctx.setTransform(canvas.width / width,0,0,canvas.height / height,0,0);
+    wake();
+  }).observe(canvas);
+  new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; wake(); }).observe(canvas);
+  document.addEventListener('visibilitychange',wake);
+  reduced.addEventListener('change',wake);
+  return wake;
+}
+function polygon(ctx, points, color) {
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  points.forEach(([x,y],i) => i ? ctx.lineTo(x,y) : ctx.moveTo(x,y));
+  ctx.closePath();
+  ctx.fill();
+}
+function stroke(ctx, points, color, width = 1) {
+  ctx.strokeStyle = color;
+  ctx.lineWidth = width;
+  ctx.beginPath();
+  points.forEach(([x,y],i) => i ? ctx.lineTo(x,y) : ctx.moveTo(x,y));
+  ctx.stroke();
+}
+const hero = $('#home');
+const pointer = {x:0,y:0};
+let heroPauseAt=null,heroPauseOffset=0,heroWebGLWake=()=>{};
+const heroMoves=()=>heroPauseAt===null;
+const heroTime=now=>reduced.matches?1:Math.max(0,((heroPauseAt??now)-heroPauseOffset)/1000);
+function tramPosition(t){
+  const x=-.24+((.635+t/56)%1)*1.52;
+  return {x,y:.806+(x-.62)*.020};
+}
+hero.addEventListener('pointermove',event => {
+  if(reduced.matches || !heroMoves()) return;
+  const box = hero.getBoundingClientRect();
+  pointer.x = (event.clientX - box.left) / box.width - .5;
+  pointer.y = (event.clientY - box.top) / box.height - .5;
+},{passive:true});
+hero.addEventListener('pointerleave',() => { pointer.x = 0; pointer.y = 0; });
+const snow = Array.from({length:240},(_,i) => {
+  const rnd = random(271+i*781);
+  return [rnd(),rnd(),rnd(),rnd()];
+});
+const skyline = Array.from({length:3},(_,layer) => {
+  const rand = random(238 + layer*92);
+  return Array.from({length:19},(_,i) => [i/17-.05,rand(),rand(),rand(),rand()]);
+});
+function cityRoof(ctx,x,y,w,h,layer,seed) {
+  const colors = [
+    ['#3a444a','#49545a','#687578','#39444b'],
+    ['#263039','#39434b','#809096','#313941'],
+    ['#171f27','#28323b','#899296','#242930']
+  ][layer];
+  const ridge = y - h * .28;
+  const offset = w * .28;
+  polygon(ctx,[[x,y],[x+w,y],[x+w,y+h],[x,y+h]],colors[0]);
+  polygon(ctx,[[x+w,y],[x+w+offset,y-offset*.54],[x+w+offset,y+h-offset*.54],[x+w,y+h]],colors[3]);
+  polygon(ctx,[[x-3,y+1],[x+w+2,y+1],[x+w+offset,ridge],[x+offset,ridge]],colors[2]);
+  polygon(ctx,[[x-3,y+4],[x+w,y+4],[x+w+offset,ridge+2],[x+offset,ridge+2]],colors[1]);
+  if (seed > .39) {
+    ctx.fillStyle = colors[0]; ctx.fillRect(x+w*.73,ridge-h*.18,w*.075,h*.23);
+    ctx.fillStyle = colors[2]; ctx.fillRect(x+w*.72,ridge-h*.18,w*.1,2);
+  }
+  const cols = Math.max(2,Math.floor(w/17));
+  for (let row=0;row<2;row++) for (let i=0;i<cols;i++) {
+    const wx=x+(i+.55)*w/(cols+.2), wy=y+h*(.22+row*.35), ww=w/(cols*2.5);
+    ctx.fillStyle = (i*13+row*7+Math.floor(seed*131))%13===0 ? '#b39169' : '#10151bb8';
+    ctx.fillRect(wx,wy,ww,h*.12);
+    stroke(ctx,[[wx,wy+h*.12],[wx+ww,wy+h*.12]],'#9ca5a72b',1);
+  }
+}
+function cityTower(ctx,x,y,w,h) {
+  polygon(ctx,[[x-w*.45,y],[x+w*.45,y],[x+w*.45,y-h*.57],[x-w*.45,y-h*.57]],'#283038');
+  polygon(ctx,[[x-w*.47,y-h*.56],[x,y-h],[x+w*.47,y-h*.56]],'#19242b');
+  polygon(ctx,[[x,y-h],[x+w*.47,y-h*.56],[x+w*.16,y-h*.56]],'#697a7e');
+  ctx.fillStyle='#8b9b9c';ctx.fillRect(x-w*.52,y-h*.55,w*1.04,2);
+  ctx.fillStyle='#100f14';ctx.fillRect(x-w*.13,y-h*.51,w*.26,h*.19);
+  ctx.beginPath();ctx.arc(x,y-h*.31,w*.16,0,Math.PI*2);ctx.strokeStyle='#ad946a';ctx.lineWidth=1.4;ctx.stroke();
+  stroke(ctx,[[x,y-h*.31],[x,y-h*.36],[x+w*.06,y-h*.31]],'#c5a059',1);
+  stroke(ctx,[[x,y-h],[x,y-h*1.071]],'#86969d',1.2);
+  const star = Array.from({length:10},(_,i) => {
+    const a=-Math.PI/2+i*Math.PI/5, r=w*(i%2 ? .05 : .122);
+    return [x+Math.cos(a)*r,y-h*1.075+Math.sin(a)*r];
+  });
+  polygon(ctx,star,'#8f493e');
+}
+function balloon(ctx,x,y,r,angle) {
+  ctx.save();ctx.translate(x,y);ctx.rotate(angle);
+  const skin=ctx.createLinearGradient(0,-r,0,r);skin.addColorStop(0,'#899297');skin.addColorStop(.43,'#57636b');skin.addColorStop(1,'#252d36');
+  ctx.beginPath();ctx.ellipse(0,0,r*2.65,r,0,0,Math.PI*2);ctx.fillStyle=skin;ctx.fill();
+  polygon(ctx,[[r*1.7,-r*.26],[r*3.0,-r*1.05],[r*2.55,r*.2],[r*3,r*.73],[r*1.85,r*.4]],'#424d56');
+  ctx.strokeStyle='#a6aeb02e';ctx.lineWidth=1;
+  for(let i=-1;i<=1;i++){ctx.beginPath();ctx.ellipse(i*r*.72,0,r*.46,r*.91,-.16,0,Math.PI*2);ctx.stroke();}
+  stroke(ctx,[[r*.2,r*.96],[r*.8,r*1.45],[r*1.4,r*5]],'#7a858464',.8);
+  ctx.restore();
+}
+function streetObstacle(ctx,x,y,s) {
+  ctx.save();ctx.translate(x,y);ctx.scale(s,s);
+  stroke(ctx,[[-34,11],[40,11]],'#080b1088',6);
+  for (const [x1,y1,x2,y2] of [[-32,3,31,-17],[-28,-27,22,15],[6,-36,-5,15]]) {
+    stroke(ctx,[[x1,y1],[x2,y2]],'#10151b',7);
+    stroke(ctx,[[x1,y1-3],[x2,y2-3]],'#829094',1.6);
+  }
+  ctx.restore();
+}
+function wartimeTram(ctx,x,y,scale){
+  ctx.save();ctx.translate(x,y);ctx.scale(scale,scale);
+  stroke(ctx,[[-82,3],[87,3]],'#141c23a6',9);
+  for (const wheel of [-51,45]){
+    ctx.fillStyle='#20262a';ctx.beginPath();ctx.arc(wheel,-6,10,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle='#5e625e';ctx.lineWidth=1.3;ctx.stroke();
+  }
+  polygon(ctx,[[-79,-8],[-84,-18],[-82,-59],[-72,-69],[61,-69],[77,-63],[84,-47],[82,-14],[65,-8]],'#654946');
+  polygon(ctx,[[64,-62],[77,-59],[84,-48],[82,-14],[65,-12]],'#463635');
+  polygon(ctx,[[-81,-30],[67,-30],[82,-33],[82,-44],[66,-41],[-82,-41]],'#9b805e');
+  polygon(ctx,[[-84,-60],[-78,-70],[-67,-73],[62,-73],[78,-66],[84,-58],[65,-61]],'#626c6d');
+  for(let i=0;i<7;i++){
+    const wx=-70+i*19;
+    ctx.fillStyle=i===5?'#594e39':'#282f34';ctx.fillRect(wx,-56,14,18);
+    stroke(ctx,[[wx,-56],[wx+14,-56],[wx+14,-38]],'#857e68',1);
+    stroke(ctx,[[wx+6,-55],[wx+6,-39]],'#a38b66',.65);
+  }
+  stroke(ctx,[[27,-72],[-29,-103],[-36,-103]],'#87918e',1.1);
+  const light=ctx.createRadialGradient(78,-22,0,78,-22,13);
+  light.addColorStop(0,'#d9b06dbe');light.addColorStop(.26,'#bc93585f');light.addColorStop(1,'#d9b06d00');
+  ctx.fillStyle=light;ctx.fillRect(65,-35,26,26);
+  ctx.fillStyle='#c6a277';ctx.fillRect(76,-24,4,4);
+  ctx.restore();
+}
+function wardWarden(ctx,x,y,scale){
+  ctx.save();ctx.translate(x,y);ctx.scale(scale,scale);
+  stroke(ctx,[[-15,0],[24,1]],'#161b2291',5);
+  stroke(ctx,[[-6,-22],[-8,-2]],'#20282d',5);stroke(ctx,[[6,-22],[7,-1]],'#20282d',5);
+  polygon(ctx,[[-7,-51],[8,-52],[13,-27],[10,-17],[-12,-18],[-13,-35]],'#414943');
+  stroke(ctx,[[-8,-45],[-15,-29]],'#54574d',5);stroke(ctx,[[-12,-38],[-14,-34]],'#9a6254',4);
+  ctx.fillStyle='#9b8267';ctx.fillRect(-5,-61,12,12);
+  polygon(ctx,[[-9,-59],[-8,-65],[-3,-68],[6,-67],[10,-62],[14,-60]],'#333c40');
+  stroke(ctx,[[3,-48],[3,-19]],'#5f6353',1.2);ctx.restore();
+}
+function drawHero(ctx,w,h,now) {
+  const t=heroTime(now);
+  const flat=$('#hero-3d').hidden;
+  const X = pointer.x * 20, Y = pointer.y * 13, g = ctx.createLinearGradient(0,0,0,h);
+  g.addColorStop(0,'#17212b');g.addColorStop(.45,'#394b57');g.addColorStop(.64,'#76817f');g.addColorStop(1,'#252f37');
+  ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+  const moonX=w*.80+X, moonY=h*.27+Y;
+  const moon=ctx.createRadialGradient(moonX,moonY,0,moonX,moonY,w*.48);
+  moon.addColorStop(0,'#bdbfb275');moon.addColorStop(.14,'#a2aaa94a');moon.addColorStop(1,'#36465500');
+  ctx.fillStyle=moon;ctx.fillRect(0,0,w,h);
+  for(let i=0;i<9;i++) {
+    const cx=w*(.17+i*.115)+X*.3, cy=h*(.28+(i%3)*.08);
+    const haze=ctx.createRadialGradient(cx,cy,0,cx,cy,w*.24);
+    haze.addColorStop(0,'#131c232a');haze.addColorStop(1,'#151e2400');
+    ctx.save();ctx.translate(0,cy);ctx.scale(1,.36);ctx.translate(0,-cy);
+    ctx.fillStyle=haze;ctx.fillRect(0,cy-w*.24,w,w*.48);ctx.restore();
+  }
+  for(let i=0;i<(flat?4:2);i++) {
+    const x=w*(.51+i*.145)+X, y=h*(.68+i*.015);
+    const top=x+w*Math.sin(t*.13+i*1.95)*.32-w*.09;
+    const beam=ctx.createLinearGradient(x,y,top,h*.08);
+    beam.addColorStop(0,'#f0e6ac7a');beam.addColorStop(.39,'#e7e7cb34');beam.addColorStop(1,'#d6e1da02');
+    polygon(ctx,[[x-2,y],[top-w*.047,h*.03],[top+w*.047,h*.03],[x+2,y]],beam);
+    stroke(ctx,[[x,y],[top,h*.03]],'#dce8d927',1.2);
+  }
+  if(flat) {
+    balloon(ctx,w*.71+X*.6,h*.34+Y*.4+Math.sin(t*.28)*4,Math.max(8,w*.011),-.12);
+    balloon(ctx,w*.91+X*.8,h*.42+Y*.8+Math.sin(t*.2+3)*5,Math.max(6,w*.006),.08);
+  }
+  balloon(ctx,w*.55+X*.4,h*.39+Y*.2,Math.max(5,w*.0047),-.14);
+  skyline.forEach((rows,layer) => {
+    rows.forEach(([p,a,b,c,d]) => {
+      const x = w*p + X*(.36+layer*.25), roofY=h*(.65+layer*.054+a*.034)+Y*.24;
+      const ww=w*(.033+b*.052), hh=h*(.045+c*.085+layer*.017);
+      cityRoof(ctx,x,roofY-h*c*.065,ww,hh,layer,d);
+    });
+    if(layer===1) cityTower(ctx,w*.69+X,h*.759+Y*.24,w*.052,h*.207);
+  });
+  const street=ctx.createLinearGradient(0,h*.78,0,h);street.addColorStop(0,'#737b79');street.addColorStop(1,'#333e47');
+  polygon(ctx,[[0,h*.85],[w*.31,h*.81],[w*.62,h*.805],[w*.93,h*.84],[w,h*.86],[w,h],[0,h]],street);
+  polygon(ctx,[[w*.72,h*.818],[w*.76,h*.82],[w*.59,h],[w*.25,h]],'#9ea29a59');
+  polygon(ctx,[[w*.49,h*.85],[w*.62,h*.825],[w*.55,h*.9],[w*.39,h*.97]],'#c0c6b731');
+  const grains=random(97);
+  for(let i=0;i<420;i++) {
+    const a=grains(),b=grains(),r=grains(), y=h*(.815+b*.185);
+    ctx.fillStyle=i%3 ? '#e4e8de21' : '#1720293d';
+    ctx.fillRect(a*w,y,1+r*6*b,1+r*b);
+  }
+  for(const dx of [0,.012]){
+    stroke(ctx,[[w*.34,h*(.801+dx)],[w,h*(.816+dx)]],'#28363c',2.2);
+    stroke(ctx,[[w*.35,h*(.801+dx)-1.1],[w,h*(.816+dx)-1.1]],'#9aa3a04a',.95);
+  }
+  const wire=h*.693;
+  stroke(ctx,[[w*.36,wire],[w,wire+h*.018]],'#27353bbe',1.25);
+  for(const position of [.59,.94]){
+    const x=position*w+X*.38,y=h*(.804+(position-.59)*.026);
+    stroke(ctx,[[x,y],[x,wire+h*.004],[x+w*.028,wire+h*.001]],'#27343b',2.8);
+    stroke(ctx,[[x+.8,y],[x+.8,wire+h*.004]],'#88918c63',.8);
+  }
+  if (flat) {
+    const tram=tramPosition(t),size=h/790;
+    wartimeTram(ctx,w*tram.x+X*.58,h*tram.y+Y*.12,size);
+    streetObstacle(ctx,w*.86+X,h*.92+Y*.4,w/970);
+    streetObstacle(ctx,w*.66+X,h*.874+Y*.4,w/1570);
+    streetObstacle(ctx,w*.97+X,h*.86+Y*.4,w/2000);
+    wardWarden(ctx,w*.955+X*.88,h*.9+Y*.36,h/850);
+  }
+}
+const redrawHero=surface($('#hero-flat'),drawHero,heroMoves);
+function drawSnow(ctx,w,h,now) {
+  ctx.clearRect(0,0,w,h);
+  const t=heroTime(now);
+  for(const [a,b,c,d] of snow) {
+    const x=((a*w+t*(7+c*11)+Math.sin(t*.5+c*12)*12)%w+w)%w;
+    const y=(b*h+t*(13+c*36))%h;
+    ctx.fillStyle='rgba(225,235,235,'+(.12+c*.47)+')';
+    ctx.fillRect(x,y,.65+d*1.6,1+c*2.05);
+  }
+}
+const redrawSnow=surface($('#hero-snow'),drawSnow,heroMoves);
+const heroMotion=$('#hero-motion');
+function resetHeroMotionLabel(){
+  heroMotion.hidden=reduced.matches;
+  heroMotion.setAttribute('aria-pressed',String(!heroMoves()));
+  heroMotion.textContent=heroMoves()?'Пауза сцены':'Продолжить сцену';
+}
+heroMotion.addEventListener('click',()=>{
+  if(heroMoves()) heroPauseAt=clock();
+  else {heroPauseOffset+=clock()-heroPauseAt;heroPauseAt=null;}
+  resetHeroMotionLabel();redrawHero();redrawSnow();heroWebGLWake();
+});
+reduced.addEventListener('change',resetHeroMotionLabel);
+resetHeroMotionLabel();
+
+const mapPlaces = [
+  {name:'Завод имени Сталина',short:'ЗИС',x:2.4,z:3.35,area:'Юг Москвы · Автозаводская',text:'Эвакуация разделила завод на несколько площадок. В Москве восстанавливали производство, на востоке разворачивали вывезенные цеха. В военные годы предприятие выпускало грузовики и выполняло оборонные заказы.',source:'zil',scene:'factory'},
+  {name:'Завод «Серп и Молот»',short:'Серп и Молот',x:4.25,z:.92,area:'Рогожская застава',text:'Часть мощностей московских металлургических заводов вывозили на восток. Постановление ГКО от 7 августа 1941 года закрепило решения об эвакуации и развёртывании производства качественного металла.',source:'steel',scene:'steel'},
+  {name:'Станция «Маяковская»',short:'Маяковская',x:-1.76,z:-1.75,area:'Площадь Маяковского',text:'Во время тревог станция служила укрытием. 6 ноября 1941 года здесь состоялось торжественное заседание Моссовета. Глубокая станция позволяла провести его под землёй.',source:'metro',scene:'metro'},
+  {name:'Боткинская больница',short:'Эвакогоспитали',x:-3.9,z:-2.95,area:'Ходынское поле',text:'Боткинская больница принимала раненых. Сеть эвакогоспиталей была шире одной больницы: при необходимости палаты разворачивали в школах и других гражданских зданиях.',source:'botkin',scene:'hospital'},
+  {name:'Оборонительные заграждения',short:'Заграждения',x:-4.42,z:2.4,area:'Дорогомилово · пример городского рубежа',text:'На городской окраине строили оборонительные полосы, а на улицах ставили баррикады и противотанковые ежи. Один из таких участков на Большой Дорогомиловской улице запечатлён на фотографии октября 1941 года.',source:'diaries',scene:'street'},
+  {name:'Казанский вокзал',short:'Казанский',x:2.95,z:-1.91,area:'Комсомольская площадь',text:'Казанский вокзал связывал Москву с восточными направлениями. Железная дорога одновременно обслуживала эвакуацию, воинские перевозки и снабжение. Отправления зависели от направления и очередности.',source:'evac',scene:'kazan'},
+  {name:'Ярославский вокзал',short:'Ярославский',x:2.11,z:-2.63,area:'Комсомольская площадь',text:'Северо-восточные направления железной дороги связывали столицу с тыловыми районами. Вокзал входил в железнодорожный узел на Комсомольской площади.',source:'evac',scene:'yaroslav'}
+];
+const riverPoints = [[-7,.22],[-5.6,.47],[-4.25,1.65],[-3,2.05],[-1.52,1.42],[-.2,1.28],[1.3,2],[2.2,2.66],[3.47,2.59],[4.2,3.32],[4.65,4.3],[6.1,4.4],[7,4]];
+function catmull(points, segments = 8) {
+  const path = [];
+  for(let i=0;i<points.length-1;i++) for(let k=0;k<segments;k++) {
+    const t=k/segments, a=points[Math.max(0,i-1)], b=points[i], c=points[i+1], d=points[Math.min(i+2,points.length-1)];
+    path.push(b.map((v,j) => .5*((2*v)+(-a[j]+c[j])*t+(2*a[j]-5*v+4*c[j]-d[j])*t*t+(-a[j]+3*v-3*c[j]+d[j])*t*t*t)));
+  }
+  return [...path,points.at(-1)];
+}
+const river = catmull(riverPoints);
+const garden = catmull([[-2.3,-.1],[-1.9,-1.4],[-.25,-1.9],[1.39,-1.58],[2.42,-.42],[2.45,.88],[1.64,2.11],[.05,2.5],[-1.39,1.7],[-2.3,-.1],[-1.9,-1.4]]).slice(0,-8);
+const mapRandom = random(1937);
+const blocks = Array.from({length:330},() => {
+  const x=(mapRandom()-.5)*13.5, z=(mapRandom()-.5)*9.7, size=.15+mapRandom()*.22, h=.07+mapRandom()*.32;
+  return {x,z,size,h,wet:river.some(([rx,rz])=>Math.hypot(rx-x,rz-z)<.43)};
+}).filter(b=>!b.wet);
+const blocksByDepth=[...blocks].sort((a,b)=>a.z-b.z);
+function mapProjection(w,h,x,z,y=0) {
+  const scale=Math.min(w/13.4,h/8.7);
+  return [w*.5+(x-z*.125)*scale,h*.51+(z*.76+x*.075-y)*scale];
+}
+function positionPins(project) {
+  $$('#pins .pin').forEach((button,i) => {
+    const pos=mapPlaces[i]; const [x,y]=project(pos.x,pos.z);
+    button.style.left=x+'px';button.style.top=y+'px';
+    const parent=button.parentElement;
+    button.hidden=x<18 || x>parent.clientWidth-18 || y<18 || y>parent.clientHeight-18;
+  });
+}
+function drawMap(ctx,w,h) {
+  if (!$('#map-3d').hidden) return;
+  const project=(x,z,y)=>mapProjection(w,h,x,z,y);
+  const bg=ctx.createLinearGradient(0,0,w,h);bg.addColorStop(0,'#343b38');bg.addColorStop(1,'#252e2d');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,w,h);
+  for(let x=-10;x<=10;x+=.75) stroke(ctx,[project(x,-8),project(x,8)],'#9d9b6b20',1);
+  for(let z=-8;z<=8;z+=.75) stroke(ctx,[project(-10,z),project(10,z)],'#9d9b6b20',1);
+  const scale=w/700;
+  for(const b of blocksByDepth) {
+    const d=b.size*.5, corners=[[b.x-d,b.z-d],[b.x+d,b.z-d],[b.x+d,b.z+d],[b.x-d,b.z+d]];
+    const floor=corners.map(([x,z])=>project(x,z)), top=corners.map(([x,z])=>project(x,z,b.h));
+    polygon(ctx,[floor[1],floor[2],top[2],top[1]],'#514c3b');
+    polygon(ctx,[floor[2],floor[3],top[3],top[2]],'#625d48');
+    polygon(ctx,top,b.h>.26 ? '#9b9270' : '#77755b');
+  }
+  const line=(points,color,width)=>stroke(ctx,points.map(([x,z])=>project(x,z)),color,width*scale);
+  line(river,'#87938b',31);line(river,'#385766',26);line(river,'#496b79',13);
+  ctx.setLineDash([5,3]);line(garden,'#d8ba77',2.5);ctx.setLineDash([]);
+  const [centerX,centerY]=project(.28,.31);
+  ctx.fillStyle='#e5d5b3';ctx.font='11px Georgia';ctx.fillText('Кремль',centerX+7,centerY+5);
+  ctx.fillRect(centerX-2,centerY-2,4,4);
+  const [rx,ry]=project(-3.3,2.5);ctx.fillStyle='#b8c9c7';ctx.fillText('Москва-река',rx,ry);
+  const [gx,gy]=project(-1.8,-1);ctx.fillStyle='#dbc68c';ctx.fillText('Садовое кольцо',gx-64,gy);
+  positionPins(project);
+}
+const redrawMap=surface($('#map-flat'),drawMap,false);
+function selectPlace(index,trigger) {
+  $$('#pins button, #map-list button').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.place)===index)));
+  const place=mapPlaces[index];
+  if(place) openDiorama(place,trigger);
+}
+mapPlaces.forEach((place,index) => {
+  for(const [target,label] of [['#pins',String(index+1).padStart(2,'0')],['#map-list',place.short]]) {
+    const button=document.createElement('button');
+    button.type='button';button.dataset.place=index;button.textContent=label;
+    button.title=place.name;button.setAttribute('aria-label',place.name);button.setAttribute('aria-pressed','false');button.setAttribute('aria-controls','map-diorama');
+    if(target==='#pins') button.className='pin';
+    button.addEventListener('click',()=>selectPlace(index,button));
+    $(target).append(button);
+  }
+});
+const REFERENCES = {
+  gko:['РГАСПИ. Постановление ГКО СССР № 813 от 19 октября 1941 г. Ф. 644. Оп. 1. Д. 12. Л. 167–168.','https://www.prlib.ru/item/1339595'],
+  evac:['РГАСПИ. Постановление ГКО СССР № 801 сс «Об эвакуации столицы СССР г. Москвы», 15 октября 1941 г.','https://www.prlib.ru/item/1339623'],
+  parade:['Президентская библиотека. Архивные документы о военном параде 7 ноября 1941 г.','https://www.prlib.ru/news/1920843'],
+  counter:['Президентская библиотека. Начало контрнаступления советских войск под Москвой, 5 декабря 1941 г.','https://www.prlib.ru/history/2002744'],
+  diaries:['Сырейщиков Н. П., Миллер П. Н. Дневниковые записи за октябрь 1941 г. Выставка Музея Москвы.','https://online.mosmuseum.ru/vov/1941-okt'],
+  diaryTwo:['Музей Москвы. Дневники москвичей за ноябрь 1941 г.','https://online.mosmuseum.ru/vov/1941-nbr'],
+  diaryK:['К., Маруся. Дневник, июнь 1941 — март 1942 г. Научный архив ИРИ РАН. Ф. 2. Разд. IX. Оп. 38. Д. 15.','https://docs.historyrussia.org/ru/nodes/177123'],
+  museum:['Музей Москвы. «Москва в годы Великой Отечественной войны». Дневники, фотографии и кинохроника.','https://online.mosmuseum.ru/vov'],
+  mosWar:['«Москва военная. 1941–1945». Мемуары и архивные документы. М.: Мосгорархив, 1995.','https://docs.historyrussia.org/ru/nodes/170223-moskva-voennaya-1941-1945'],
+  metro:['Департамент транспорта Москвы. Материалы о работе Московского метрополитена в военные годы.','https://i.transport.mos.ru/9may'],
+  rations:['«Моссовет на защите Москвы». Каталог-справочник выставки. Таблица норм снабжения в июле 1941 г.','https://mossovet-90.ru/katalog.pdf'],
+  zil:['АМО ЗИЛ. История завода. Военное производство и эвакуация.','https://amo-zil.ru/history'],
+  steel:['РГАСПИ. Постановление ГКО СССР № 424 с об эвакуации заводов «Серп и Молот» и «Электросталь».','https://www.prlib.ru/item/1335037'],
+  kazan:['Московские учреждения культуры. Здание Казанского вокзала, архитектор А. В. Щусев.','https://mosculture.ru/object/zdanie-kazanskogo-vokzala-1912-1914-gg-arh-a-v-shhusev/'],
+  yaroslav:['Департамент культурного наследия Москвы. Акт экспертизы здания Ярославского вокзала.','https://www.mos.ru/upload/documents/oiv/komsomolskaya_pl_d_5_28042017_.pdf'],
+  ppsh:['Музейный комплекс «Дорога памяти». Пистолет-пулемёт системы Шпагина образца 1941 г.','https://1418museum.ru/eksponaty/10_exb-0920/'],
+  artillery:['Военно-исторический музей артиллерии. История ракетного вооружения.','https://www.museum-artillery.ru/ru/basic/istoriya-raketnogo-vooruzheniya.html'],
+  botkin:['Департамент культурного наследия г. Москвы. Акт историко-культурной экспертизы корпуса № 9 Боткинской больницы.','https://www.mos.ru/upload/documents/files/4267/AktBotkinakorpys9%281%29pdfsECPpdfsECP%281%29.pdf'],
+  film:['Варламов Л. В., Копалин И. П. «Разгром немецких войск под Москвой». Центральная студия кинохроники, 1942. Госфильмофонд России.','https://gosfilmofond.ru/films/244498/'],
+  filmArchive:['Росархив. «Разгром немецких войск под Москвой». Архивная видеопубликация.','https://victory.rusarchives.ru/video/razgrom-nemecko-fashistkih-voysk-pod-moskvoy'],
+  tass:['The Art Institute of Chicago. The TASS Window Poster Studio. Каталожное досье мастерской.','https://archive.artic.edu/tass/studio/']
+};
+function sourceLink(key,label='Читать источник ↗') {
+  const reference=REFERENCES[key] || REFERENCES.gko;
+  return '<a class="source" href="'+reference[1]+'" target="_blank" rel="noopener noreferrer">'+label+'</a>';
+}
+
+// The illustration and the map work immediately. Three.js enhances both when available.
+function webGLScene(T, canvas, options, draw, restoreFallback, animate=()=>true) {
+  const context=canvas.getContext('webgl2',options);
+  if(!context) return false;
+  let renderer;
+  try { renderer=new T.WebGLRenderer({canvas,context,...options}); }
+  catch { return false; }
+  renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));
+  let visible=true, frame=0, running=true, width=0, height=0;
+  function wake() {
+    if(running && visible && !document.hidden && !frame) frame=requestAnimationFrame(render);
+  }
+  function render(time) {
+    frame=0;
+    const w=canvas.clientWidth,h=canvas.clientHeight;
+    if(!w || !h || context.isContextLost()) return;
+    if(w!==width || h!==height) { width=w;height=h;renderer.setSize(w,h,false); }
+    draw(renderer,w,h,time);
+    if(!reduced.matches && animate()) wake();
+  }
+  canvas.addEventListener('webglcontextlost',event=>{
+    event.preventDefault();
+    running=false;cancelAnimationFrame(frame);frame=0;canvas.hidden=true;
+    restoreFallback();
+  },{capture:true});
+  new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;wake();}).observe(canvas);
+  new ResizeObserver(wake).observe(canvas);
+  document.addEventListener('visibilitychange',wake);
+  reduced.addEventListener('change',wake);
+  canvas.hidden=false;
+  wake();
+  return wake;
+}
+function buildHero(T) {
+  const heroCanvas=$('#hero-3d');
+  const scene=new T.Scene();
+  const camera=new T.OrthographicCamera(-1,1,1,-1,.1,100);
+  const town=new T.Group(); scene.add(town);
+  function solid(color,emissive=0){
+    return new T.MeshStandardMaterial({color,emissive,roughness:.9,emissiveIntensity:.24});
+  }
+  function piece(group,geometry,material,x,y,z){
+    const mesh=new T.Mesh(geometry,material);mesh.position.set(x,y,z);group.add(mesh);return mesh;
+  }
+  function cuboid(group,material,x,y,z,w,h,d){
+    return piece(group,new T.BoxGeometry(w,h,d),material,x,y,z);
+  }
+  const steel=new T.MeshStandardMaterial({color:0x252930,roughness:.89});
+  const steelFace=new T.MeshStandardMaterial({color:0x536268,roughness:.85});
+  const beamGeo=new T.BoxGeometry(1,.10,.10);
+  const beamMat=[steel,steel,steelFace,steel,steel,steelFace];
+  function obstacle(x,y,z,size,angle) {
+    const group=new T.Group(); group.position.set(x,y,z); group.scale.setScalar(size);group.rotation.y=angle;
+    for(const direction of [[1,.66,.27],[-.74,.93,.33],[.23,.78,-1]]) {
+      const mesh=new T.Mesh(beamGeo,beamMat);
+      mesh.quaternion.setFromUnitVectors(new T.Vector3(1,0,0),new T.Vector3(...direction).normalize());
+      group.add(mesh);
+    }
+    town.add(group);
+  }
+  obstacle(.91,-.77,.22,.43,.4);
+  obstacle(.52,-.67,-.72,.27,-.18);
+  obstacle(1.32,-.65,-.81,.18,.5);
+  const hull=new T.MeshStandardMaterial({color:0x525b61,roughness:.96});
+  const ribs=new T.MeshStandardMaterial({color:0x747a7c,roughness:.97});
+  const airships=[.72,.915].map((u,i)=>{
+    const craft=new T.Group();
+    const body=new T.Mesh(new T.SphereGeometry(1,24,12),hull);
+    body.scale.set(2.62,.87,.88);craft.add(body);
+    for (const x of [-1.68,-.83,0,.83,1.68]){
+      const radius=.87*Math.sqrt(1-(x/2.62)**2);
+      const seam=new T.Mesh(new T.TorusGeometry(radius,.022,5,28),ribs);
+      seam.rotation.y=Math.PI/2;seam.position.x=x;craft.add(seam);
+    }
+    const fins=new T.Mesh(new T.BoxGeometry(1.05,1.47,.08),hull);
+    fins.position.x=2.1;fins.rotation.z=-.27;craft.add(fins);
+    const tether=new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(.0,-.84,0),new T.Vector3(.62,-3.65,0)]),new T.LineBasicMaterial({color:0x67757d,opacity:.4,transparent:true}));
+    craft.add(tether);scene.add(craft);
+    craft.rotation.set(.14,i*.49-.25,i?.13:-.13);
+    return {craft,u,v:.34+i*.079,scale:i?.016:.026};
+  });
+  const houseShape=new T.Shape();
+  houseShape.moveTo(-.5,0);houseShape.lineTo(.5,0);houseShape.lineTo(.5,.63);houseShape.lineTo(.18,.87);houseShape.lineTo(-.34,.87);houseShape.lineTo(-.5,.64);houseShape.closePath();
+  const houseGeo=new T.ExtrudeGeometry(houseShape,{depth:.71,bevelEnabled:false});
+  const faceMaterial=new T.MeshStandardMaterial({color:0x263039,roughness:.96});
+  const roofMaterial=new T.MeshStandardMaterial({color:0x404b52,roughness:.93});
+  const houseWindows=[0x161d22,0x5e5947].map(color=>new T.MeshBasicMaterial({color}));
+  const houseWindowGeo=new T.PlaneGeometry(.115,.16);
+  const foreground=[.61,.80,.97].map((x,i)=>{
+    const house=new T.Group();
+    const main=new T.Mesh(houseGeo,[faceMaterial,roofMaterial]);house.add(main);
+    for(let row=0;row<2;row++) for(let col=0;col<4;col++){
+      const lit=(row+i*3+col*2)%9===2;
+      const hole=new T.Mesh(houseWindowGeo,houseWindows[Number(lit)]);
+      hole.position.set(-.355+.23*col,.115+.235*row,.712);house.add(hole);
+    }
+    const sill=solid(0x5e655e),door=solid(0x282c2d);
+    cuboid(house,sill,0,.63,.71,1.02,.035,.06);
+    cuboid(house,door,.117,.12,.723,.16,.24,.03);
+    cuboid(house,sill,.117,.25,.752,.208,.037,.055);
+    cuboid(house,sill,.10,.009,.773,.24,.035,.13);
+    house.rotation.y=-.42;house.scale.set(.26+i*.027,.16+i*.024,.27);scene.add(house);
+    return {house,x,i};
+  });
+  const tram=new T.Group();scene.add(tram);
+  const iron=solid(0x272b2c),redBody=solid(0x69504d),trim=solid(0xa28a67),roof=solid(0x677475);
+  const glass=solid(0x2b3338),warmGlass=solid(0x635642,0x382c16),lamp=solid(0xa17a48,0xb1874f);
+  cuboid(tram,iron,0,.041,0,.423,.041,.115);
+  cuboid(tram,redBody,0,.104,0,.43,.108,.14);
+  cuboid(tram,trim,0,.112,0,.432,.028,.144);
+  cuboid(tram,redBody,.224,.104,0,.048,.105,.133);
+  cuboid(tram,redBody,-.224,.104,0,.048,.105,.133);
+  cuboid(tram,roof,0,.169,0,.501,.032,.154);
+  cuboid(tram,roof,0,.191,0,.449,.017,.115);
+  for(const side of [-1,1]){
+    for(let i=0;i<7;i++){
+      const x=-.182+i*.059,z=side*.073;
+      cuboid(tram,trim,x,.139,z,.048,.038,.003);
+      cuboid(tram,i===4?warmGlass:glass,x,.139,z+side*.002,.039,.03,.004);
+      cuboid(tram,trim,x,.139,z+side*.005,.004,.030,.002);
+    }
+    for(const x of [-.145,.143]){
+      const wheel=piece(tram,new T.CylinderGeometry(.032,.032,.018,12),iron,x,.028,side*.049);
+      wheel.rotation.x=Math.PI/2;
+    }
+  }
+  for(const direction of [-1,1]){
+    cuboid(tram,trim,direction*.25,.133,0,.005,.058,.108);
+    for(const z of [-.026,.026]) cuboid(tram,glass,direction*.253,.137,z,.005,.038,.044);
+    const headlamp=piece(tram,new T.SphereGeometry(.010,12,8),lamp,direction*.254,.085,0);
+    headlamp.scale.x=.51;
+  }
+  const rod=piece(tram,new T.CylinderGeometry(.0027,.0027,.184,6),iron,-.04,.244,0);
+  rod.rotation.z=1.04;
+  cuboid(tram,iron,-.122,.293,0,.038,.006,.012);
+  const warden=new T.Group();scene.add(warden);
+  const coat=solid(0x4b554b),trouser=solid(0x323936),skin=solid(0x8d7661),band=solid(0x865447);
+  piece(warden,new T.CylinderGeometry(.028,.041,.08,7),coat,0,.091,0);
+  for(const side of [-1,1]){
+    cuboid(warden,trouser,side*.019,.029,0,.022,.058,.025);
+    cuboid(warden,iron,side*.019,.007,.009,.026,.013,.042);
+    const arm=cuboid(warden,coat,side*.036,.087,.003,.016,.062,.021);
+    arm.rotation.z=side*.20;
+  }
+  cuboid(warden,band,-.039,.101,.004,.023,.016,.024);
+  piece(warden,new T.SphereGeometry(.021,10,7),skin,0,.152,0);
+  piece(warden,new T.CylinderGeometry(.024,.024,.019,9),trouser,0,.17,0);
+  cuboid(warden,trouser,0,.165,.016,.044,.008,.026);
+  const searchlights=[];
+  for(let i=0;i<3;i++){
+    const material=new T.ShaderMaterial({
+      vertexShader:'varying vec3 v; void main(){v=position;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}',
+      fragmentShader:'varying vec3 v; void main(){float d=clamp((v.y + 0.7)/1.4,0.0,1.0);gl_FragColor=vec4(0.65,0.74,0.73,0.10*d*d);}',
+      transparent:true,depthWrite:false,side:T.DoubleSide,blending:T.AdditiveBlending
+    });
+    const light=new T.Mesh(new T.ConeGeometry(.145,1.4,18,1,true),material);
+    const pivot=new T.Group(); pivot.position.set(.25+i*.37,-.38,-1.1-i*.17);
+    light.rotation.z=Math.PI;light.position.y=.69;pivot.add(light);scene.add(pivot);searchlights.push(pivot);
+  }
+  scene.add(new T.HemisphereLight(0xb8ccda,0x29261e,2.2));
+  const spot=new T.DirectionalLight(0xefd7ac,1.5);spot.position.set(1,2,3);scene.add(spot);
+  const draw=(renderer,w,h,time)=>{
+    const aspect=w/h;
+    const targetX=aspect<1 ? .22 : 0;
+    const now=heroTime(time);
+    camera.left=-aspect;camera.right=aspect;camera.top=1;camera.bottom=-1;camera.updateProjectionMatrix();
+    camera.position.set(targetX+pointer.x*.085,.03+pointer.y*.07,8);
+    camera.lookAt(targetX,0,0);
+    town.position.x=aspect>1.7 ? (aspect-1.7)*.34 : 0;
+    airships.forEach(({craft,u,v,scale},i)=>{
+      craft.position.set(targetX+(u-.5)*2*aspect,.97-2*v+Math.sin(now*.34+i)*.008,-.56);
+      craft.scale.setScalar(scale*Math.min(1.1,Math.max(.8,aspect*.69)));
+    });
+    foreground.forEach(({house,x,i})=>{
+      house.position.set(targetX+(x-.5)*2*aspect,-.63-i*.026,-.85+i*.12);
+    });
+    const route=tramPosition(now);
+    tram.position.set(targetX+(route.x-.5)*2*aspect,1-route.y*2,.03);
+    tram.rotation.y=-.19;tram.rotation.z=-.015;
+    warden.position.set(targetX+(.948-.5)*2*aspect,-.796,.27);
+    warden.rotation.y=-.39;
+    searchlights.forEach((light,i)=>{light.rotation.z=Math.sin(now*.18+i*1.9)*.45;});
+    renderer.render(scene,camera);
+  };
+  const wake=webGLScene(T,heroCanvas,{alpha:true,antialias:true},draw,redrawHero,heroMoves);
+  if(wake) redrawHero();
+  return wake;
+}
+function buildMap(T) {
+  const canvas=$('#map-3d');
+  const scene=new T.Scene();
+  scene.background=new T.Color(0x2a332f);
+  scene.fog=new T.FogExp2(0x2c3430,.036);
+  const camera=new T.OrthographicCamera(-7,7,5,-5,.1,90);
+  scene.add(new T.HemisphereLight(0xf8e6cb,0x393d3e,1.85));
+  const sun=new T.DirectionalLight(0xf7d7a1,1.35);sun.position.set(-6,10,-4);scene.add(sun);
+  function plate(w,h,depth,x,y,z,color) {
+    const mesh=new T.Mesh(new T.BoxGeometry(w,h,depth),new T.MeshStandardMaterial({color,roughness:.94}));
+    mesh.position.set(x,y,z);scene.add(mesh);
+  }
+  plate(18,.25,13,0,-.18,0,0x4e5145);
+  const grid=new T.GridHelper(18,28,0x585d4e,0x55594c);grid.position.y=-.042;scene.add(grid);
+  const houses=new T.InstancedMesh(new T.BoxGeometry(1,1,1),new T.MeshStandardMaterial({color:0xffffff,roughness:1}),blocks.length);
+  const object=new T.Object3D(), tint=new T.Color();
+  blocks.forEach((b,i)=>{
+    object.position.set(b.x,b.h*.44,b.z);object.scale.set(b.size,b.h,b.size*(.71+i%3*.19));object.rotation.y=(i%4)*.15;object.updateMatrix();
+    houses.setMatrixAt(i,object.matrix);houses.setColorAt(i,tint.setHex([0x80795f,0x9a8a69,0x6d6d59,0x70634f][i%4]));
+  });
+  scene.add(houses);
+  function ribbon(points,width,y,color) {
+    const vertices=[], indices=[];
+    points.forEach(([x,z],i)=>{
+      const prev=points[Math.max(0,i-1)], next=points[Math.min(points.length-1,i+1)];
+      const dx=next[0]-prev[0],dz=next[1]-prev[1], length=Math.hypot(dx,dz);
+      if(!length) return;
+      vertices.push(x-dz/length*width/2,y,z+dx/length*width/2,x+dz/length*width/2,y,z-dx/length*width/2);
+    });
+    for(let i=0;i<vertices.length/6-1;i++){const a=i*2;indices.push(a,a+1,a+2,a+1,a+3,a+2);}
+    const shape=new T.BufferGeometry();shape.setAttribute('position',new T.Float32BufferAttribute(vertices,3));shape.setIndex(indices);shape.computeVertexNormals();
+    scene.add(new T.Mesh(shape,new T.MeshBasicMaterial({color,side:T.DoubleSide})));
+  }
+  ribbon(river,.63,.009,0x808b82);ribbon(river,.56,.015,0x3e5c63);ribbon(river,.33,.019,0x486970);
+  ribbon(garden,.07,.034,0xac8c4c);
+  plate(.34,.15,.26,.28,.07,.31,0xa17550);
+  const vec=new T.Vector3();
+  const labels=$$('.map-label');
+  function draw(renderer,w,h) {
+    const u=Math.max(5.1,7.4*h/w),v=u*w/h;
+    camera.left=-v;camera.right=v;camera.top=u;camera.bottom=-u;camera.updateProjectionMatrix();
+    camera.position.set(1.85,14,9.7);camera.lookAt(0,0,0);
+    renderer.render(scene,camera);
+    function project(x,z,y=.28){
+      vec.set(x,y,z).project(camera);return [(vec.x+1)*w/2,(1-vec.y)*h/2];
+    }
+    positionPins(project);
+    labels.forEach(label=>{
+      const [x,y]=project(Number(label.dataset.x),Number(label.dataset.z),.04);
+      label.style.left=x+'px';label.style.top=y+'px';
+    });
+  }
+  const wake=webGLScene(T,canvas,{antialias:true},draw,redrawMap,()=>false);
+  if(wake) {
+    $('#map-stage').classList.add('has-3d');
+    const observer=new MutationObserver(()=>{if(canvas.hidden) $('#map-stage').classList.remove('has-3d');});
+    observer.observe(canvas,{attributes:true,attributeFilter:['hidden']});
+  }
+}
+let threeRuntime=null;
+async function loadEnhancements() {
+  if (!navigator.onLine || !window.WebGL2RenderingContext) return;
+  try {
+    const T=await import('https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js');
+    threeRuntime=T;
+    heroWebGLWake=buildHero(T) || heroWebGLWake;
+    buildMap(T);
+    if (dioramaView) mountDioramaWebGL();
+  } catch {
+    // The Canvas scenes remain active when the optional CDN is unreachable.
+  }
+}
+loadEnhancements();
+
+const illustrations={
+  train:'<path d="M-12 177h460M-12 204h460M12 179l-20 26m70-26-15 26m65-26-12 26m62-26-8 26m58-26v26m50-26 8 26m42-26 13 26m37-26 18 26" stroke="#8d846a" stroke-width="2" opacity=".6"/><path d="M27 90h192l20 16v60H27zm235 23h49V80h65l19 37v49H262z" fill="#2d373a" stroke="#b6a379" stroke-width="2"/><path d="M39 110h186m-186 8h186m-186 28h186m74-25h76m-46-31h30v22h-30z" stroke="#b6a379" stroke-width="2"/><path d="M244 160h18m132-20h19v26h-19" stroke="#c9b079" stroke-width="3"/><g fill="#151d21" stroke="#a49063" stroke-width="3"><circle cx="65" cy="170" r="13"/><circle cx="188" cy="170" r="13"/><circle cx="287" cy="170" r="13"/><circle cx="324" cy="170" r="13"/><circle cx="374" cy="170" r="13"/></g><path d="M358 76c-40-14-20-25-86-33m75 36c-5-22-43-25-80-25" stroke="#a8aba2" opacity=".44" stroke-width="5" fill="none"/>',
+  factory:'<path d="M8 173h405v20H8zM30 99l60-30v30l58-30v30l58-30v30h27v74H30zm218-35h143v109H248z" fill="#283337" stroke="#b7a475" stroke-width="2"/><path d="M263 65V32h18v33m54-1V20h17v44M248 90h143M29 105h204" fill="none" stroke="#baaa83" stroke-width="3"/><path d="M277 38c20 2 37 0 60-3m15-11c18 2 32 0 49-5" fill="none" stroke="#889699" stroke-width="8" opacity=".27"/><g fill="#ad9165"><path d="M51 119h26v28H51zm57 0h26v28h-26zm57 0h26v28h-26zm104-18h31v34h-31zm51 0h31v34h-31z"/></g><path d="M50 133h145m73-14h84m-67-18v34m50-34v34M63 119v28m57-28v28m57-28v28" stroke="#4b4b44" stroke-width="2"/>',
+  papers:'<path d="M79 36l236-11 22 145-235 16z" fill="#8c7959" stroke="#d4bd8e" stroke-width="2"/><path d="M119 31h203v148H119z" fill="#d1bf99" stroke="#665034" stroke-width="2"/><path d="M135 71h170m-170 5h170m-164 25h144m-144 13h143m-143 13h157m-157 13h109m-109 13h126" stroke="#685941" stroke-width="2"/><text x="220" y="59" fill="#48291e" text-anchor="middle" font-family="Georgia" font-size="15">ПОСТАНОВЛЕНИЕ</text><circle cx="291" cy="144" r="23" fill="none" stroke="#90463b" stroke-width="3"/><path d="M278 146h26m-20-9h14m-14 18h14" stroke="#90463b" stroke-width="2"/>',
+  metro:'<path d="M18 178V94Q40 28 210 18 380 28 402 94v84zm49 0v-62Q73 69 210 55q137 14 143 61v62" fill="#394044" stroke="#b8ad90" stroke-width="3" fill-rule="evenodd"/><path d="M40 175l125-60m216 60-125-60M100 179l78-50m143 50-78-50" stroke="#8b8c7f" stroke-width="2"/><g fill="#c1a577"><ellipse cx="210" cy="42" rx="28" ry="3"/><ellipse cx="135" cy="52" rx="17" ry="2"/><ellipse cx="285" cy="52" rx="17" ry="2"/></g><path d="M141 180v-63q0-44 69-50 69 6 69 50v63m-77 0v-60q0-9 8-10 8 1 8 10v60" stroke="#b4a589" fill="none" stroke-width="3"/><path d="M21 180h379M23 185h373" stroke="#bcad8d" stroke-width="2"/><g fill="#b6a37c"><circle cx="85" cy="141" r="5"/><path d="M84 145l-7 18h16l-5-18z"/><circle cx="324" cy="146" r="4"/><path d="M323 149l-5 17h12l-3-17z"/></g>',
+  parade:'<path d="M0 162h420v48H0z" fill="#5d645e"/><path d="M0 105h255v56H0zm259-27h38v83h-38zm-8 2 27-63 27 63zm95 1h37v80h-37zm-6 1 23-47 25 47z" fill="#433e3c" stroke="#a6866c" stroke-width="1.5"/><path d="M0 107h252m-235-13v13m21-13v13m21-13v13m21-13v13m21-13v13m21-13v13m21-13v13m21-13v13m21-13v13m21-13v13m21-13v13m21-13v13" stroke="#9c8270" stroke-width="3"/><path d="M278 16v-9m85 27v-7" stroke="#c5a059"/><g fill="#282d2f" stroke="#a9a38b" stroke-width="1"><path d="M115 164l-9 26h18zm29 1-7 26h17zm29 0-8 26h17zm29 0-9 26h18zm29 0-8 26h17zm29 0-9 26h18z"/><circle cx="115" cy="158" r="5"/><circle cx="144" cy="159" r="5"/><circle cx="173" cy="159" r="5"/><circle cx="202" cy="159" r="5"/><circle cx="231" cy="159" r="5"/><circle cx="260" cy="159" r="5"/></g>',
+  winter:'<path d="M0 151l67-35 40 9 59-32 41 23 66-25 67 42 80-8v85H0z" fill="#606b68"/><path d="M0 169l110-28 73 15 91-28 146 35v47H0z" fill="#89938b"/><path d="M235 149l15 4-49 57h-43z" fill="#9ea49a"/><g stroke="#454c49" fill="none" stroke-width="2"><path d="M43 149V63m0 47-14-20m14 8 16-23m-16 4-8-17m38 84v-55m0 37 11-14m-11 2-8-12m292 57V70m0 42-17-19m17 7 14-19m-14 6-5-18m34 94v-61m0 34 13-21m-13 8-12-15"/></g><path d="M282 142h30v20h-30zm-4 0 19-13 20 13z" fill="#333b3a" stroke="#a2a69a"/>',
+  hospital:'<path d="M43 76h335v107H43zM32 76l61-35h234l61 35z" fill="#455050" stroke="#bcae89" stroke-width="3"/><path d="M173 79h74v104h-74zm15 55h44v49h-44z" fill="#2a3637" stroke="#bcae89" stroke-width="2"/><path d="M205 93h10v11h11v10h-11v11h-10v-11h-11v-10h11z" fill="#bc775d"/><path d="M65 100h30v35H65zm55 0h30v35h-30zm150 0h30v35h-30zm55 0h30v35h-30z" fill="#8c8b71" stroke="#d3b88c"/><path d="M22 183h380m-14 8H31" stroke="#c7b590" stroke-width="2"/>',
+  shop:'<path d="M43 61h334v117H43z" fill="#555043" stroke="#bdab83" stroke-width="3"/><path d="M63 112h95v66H63zm199 0h94v66h-94zM182 112h57v66h-57z" fill="#283136" stroke="#9f916f" stroke-width="2"/><path d="M211 114v64m-99-65v65m197-65v65" stroke="#847855" stroke-width="2"/><text x="210" y="94" text-anchor="middle" fill="#dfc993" font-family="Georgia" letter-spacing="7" font-size="17">ХЛЕБ</text><path d="M36 180h349m-11 11H45" stroke="#b5ab8e" stroke-width="2"/><g fill="#1d282c" stroke="#7f7862"><circle cx="97" cy="145" r="7"/><path d="M90 153h15l7 31H80z"/><circle cx="127" cy="151" r="5"/><path d="M121 157h11l7 27h-24z"/><circle cx="147" cy="146" r="6"/><path d="M141 153h13l7 31h-25z"/></g>',
+  spring:'<path d="M14 160h392v50H14z" fill="#6b7160"/><path d="M40 113h116v45H40zm226-16h108v62H266zm-235 1 65-28 71 28zm225-2 64-33 65 33z" fill="#49514a" stroke="#a9a381" stroke-width="2"/><path d="M182 150v-49m-4 14-27-16m27 36 25-16m-25-10 11-16m40 60v-63m0 30 19-18m-19 31-18-16" stroke="#a5a083" stroke-width="2"/><path d="M174 180c16-12 35-11 52-4m20 12c29-9 48 1 90-5m-263 10c18-4 52-5 86-3" stroke="#a9ae99" stroke-width="3" fill="none"/><path d="M102 143h20v16h-20zm206-27h25v24h-25z" fill="#aaa678"/>',
+  ppsh:'<path d="M58 116l75-26 43 9h95v-8h80v13h-61l-12 13h-55l-8 19h-33l-9-18-51 8-52 25-16-8z" fill="#ae9270" stroke="#e0cf9c" stroke-width="2"/><circle cx="219" cy="135" r="21" fill="#434943" stroke="#dbc59b" stroke-width="2"/><circle cx="219" cy="135" r="12" fill="none" stroke="#a29168"/><path d="M57 161h295M172 80h115m-102 0v20m101-25v24" stroke="#9a9d85" stroke-dasharray="4 4" fill="none"/>',
+  rockets:'<path d="M52 142h87v-31h45l31 32h128v25H52zm9-17h70v17H61z" fill="#81775d" stroke="#d5c194" stroke-width="2"/><path d="M150 119h22l24 22h-46z" fill="#252e30"/><path d="M213 124l123-63m-118 70 123-64m-115 69 124-64m-105 50h58" stroke="#d0bb8f" stroke-width="3"/><g fill="#2e3534" stroke="#b6a47f" stroke-width="3"><circle cx="103" cy="165" r="17"/><circle cx="245" cy="165" r="17"/><circle cx="291" cy="165" r="17"/></g>',
+  balloon:'<path d="M83 98C94 71 142 57 218 62c42 3 67 18 84 31l43-24-7 27 16 21-49-10c-16 24-88 35-151 26-43-7-63-21-71-35z" fill="#a19477" stroke="#d8c69d" stroke-width="2"/><path d="M132 82c-23 18-7 38 19 47m42-65c-18 19-21 46-1 70m51-68c-16 17-12 45 7 64m-40 6 21 38" fill="none" stroke="#645c4b" stroke-width="2"/><path d="M231 174h41m-151 3h54" stroke="#baad8c" stroke-width="2"/>',
+  hedgehog:'<path d="M65 165l270-76M117 55l178 121m-66-135-45 135" stroke="#b4a27e" stroke-width="12"/><path d="M65 161l270-76M117 51l178 121m-66-135-45 135" stroke="#dfc498" stroke-width="2"/><path d="M52 181h314M55 187h294" stroke="#767760" stroke-width="2"/>'
+};
+function illustration(key,decorative=true) {
+  const grain=random(506);
+  const marks=Array.from({length:200},(_,i)=>{
+    const x=(grain()*420).toFixed(1),y=(grain()*210).toFixed(1),l=(1+grain()*7).toFixed(1);
+    return 'M'+x+' '+y+'h'+l;
+  }).join(' ');
+  const art=illustrations[key] || illustrations.papers;
+  return '<svg viewBox="0 0 420 210" xmlns="http://www.w3.org/2000/svg"'+(decorative?' aria-hidden="true"':' role="img" aria-label="Схематичное изображение экспоната"')+'><path fill="#30393c" d="M0 0h420v210H0z"/><path d="M0 52h420m-420 52h420m-420 52h420M84 0v210M168 0v210M252 0v210M336 0v210" stroke="#a7a08a" opacity=".11"/>'+art+'<path d="'+marks+'" stroke="#eee0c2" opacity=".12" stroke-width=".7"/><path d="M10 10h400v190H10z" fill="none" stroke="#b9ae8d" opacity=".45"/></svg>';
+}
+const timeline = [
+  {tab:'15 октября',date:'15 октября 1941',title:'Решение об эвакуации',art:'train',body:'ГКО распорядился вывезти часть центральных учреждений из Москвы. Правительственные учреждения и дипломатический корпус направлялись в Куйбышев. Предприятия к этому моменту уже вывозили станки и сотрудников. В дневнике 14 октября Николай Сырейщиков описал встречные потоки людей: одни покидали Москву, другие искали в ней убежище.',ref:'evac'},
+  {tab:'19 октября',date:'19 октября 1941',title:'Осадное положение',art:'papers',body:'ГКО принял постановление № 813. Осадное положение в Москве и прилегающих районах вводилось с 20 октября. Движение по городу с полуночи до пяти утра допускалось по специальным пропускам. Документ закреплял меры военного времени, с которыми горожане сталкивались на улицах, в транспорте и по месту работы.',ref:'gko'},
+  {tab:'6 ноября',date:'6 ноября 1941',title:'Заседание в метро',art:'metro',body:'Торжественное заседание Моссовета, посвящённое годовщине Октябрьской революции, провели на станции «Маяковская». На платформе разместили президиум и участников. Станция служила и укрытием во время воздушных тревог — её военное назначение выходило далеко за пределы транспорта.',ref:'metro'},
+  {tab:'7 ноября',date:'7 ноября 1941',title:'Парад на Красной площади',art:'parade',body:'Утром по Красной площади прошли воинские части. Парад в прифронтовой столице стал публичным свидетельством того, что Москва продолжает обороняться. Он вошёл в кинохронику, однако часть материала для фильма снималась отдельно.',ref:'parade'},
+  {tab:'5–6 декабря',date:'5–6 декабря 1941',title:'Начало контрнаступления',art:'winter',body:'5 декабря в наступление перешли войска Калининского фронта. 6 декабря к ним присоединились ударные группировки Западного фронта. Отодвигание линии фронта снижало непосредственную угрозу городу. При этом эвакуированные семьи и предприятия вернулись в Москву в разное время.',ref:'counter'},
+  {tab:'Март 1942',date:'Март 1942',title:'Возвращение было постепенным',art:'factory',body:'В первые месяцы 1942 года город восстанавливал работу оставшихся предприятий и учреждений. Часть ранее вывезенных работников и оборудования возвращалась по мере принятия решений о реэвакуации. Многие цеха продолжали работу на востоке, а их московские площадки заново комплектовали кадрами.',ref:'mosWar'},
+  {tab:'Апрель 1942',date:'Апрель 1942',title:'Город после первой военной зимы',art:'spring',body:'С приходом оттепели вместе с восстановлением городского хозяйства нужно было расчистить улицы и дворы, привести в порядок повреждённые здания и коммунальные сети. Военный быт продолжался: выдавали продукты по карточкам, действовали меры светомаскировки и местной противовоздушной обороны.',ref:'museum'}
+];
+function installTabs(list,panel,items,paint) {
+  function select(index,focus=false) {
+    const tabs=[...list.children];
+    tabs.forEach((tab,i)=>{
+      tab.setAttribute('aria-selected',String(i===index));
+      tab.tabIndex=i===index?0:-1;
+    });
+    panel.setAttribute('aria-labelledby',tabs[index].id);
+    paint(items[index]);
+    if(focus) tabs[index].focus();
+    scheduleNavigation();
+  }
+  items.forEach((item,index)=>{
+    const b=document.createElement('button');
+    b.type='button';b.textContent=item.tab;b.id=list.id+'-'+index;
+    b.setAttribute('role','tab');b.setAttribute('aria-controls',panel.id);
+    b.addEventListener('click',()=>select(index));
+    list.append(b);
+  });
+  list.addEventListener('keydown',event=>{
+    const index=[...list.children].indexOf(event.target);
+    const last=items.length-1;
+    const moves={ArrowLeft:(index+last)%items.length,ArrowRight:(index+1)%items.length,Home:0,End:last};
+    if(index<0 || !(event.key in moves)) return;
+    event.preventDefault();select(moves[event.key],true);
+  });
+  panel.tabIndex=0;
+  select(0);
+}
+installTabs($('#timeline-tabs'),$('#timeline-panel'),timeline,item=>{
+  $('#timeline-panel').innerHTML='<div class="time-art">'+illustration(item.art)+'</div><div><span class="index">'+item.date+'</span><h3>'+item.title+'</h3><p>'+item.body+'</p>'+sourceLink(item.ref)+'</div>';
+});
+const equipment = [
+  {tab:'ППШ-41',art:'ppsh',name:'Пистолет-пулемёт Шпагина',info:'Образец 1941 года · калибр 7,62 мм · конструктор Г. С. Шпагин. Выпуск обеспечивали несколько предприятий. Ускорить серийное производство помогало применение штампованных деталей.',ref:'ppsh'},
+  {tab:'БМ-13',art:'rockets',name:'Боевая машина БМ-13',info:'1941 год · реактивная артиллерия · установка на автомобильном шасси. Московский завод «Компрессор» участвовал в выпуске установок, получивших прозвище «катюша».',ref:'artillery'},
+  {tab:'Аэростат',art:'balloon',name:'Аэростат заграждения',info:'Привязной аэростат · средство ПВО Москвы. Аэростаты поднимались над городом, чтобы затруднить полёт самолётов на малой высоте. В экспозиции показан условный силуэт.',ref:'museum'},
+  {tab:'Ёж Гориккера',art:'hedgehog',name:'Противотанковый ёж',info:'Стальное переносное заграждение · 1941 год. Конструкция связана с именем генерал-майора М. Л. Гориккера. На фотографиях осени 1941 года такие заграждения видны на московских улицах.',ref:'diaries'}
+];
+const halls=[
+  {tab:'Промышленность',title:'Завод в эвакуации и в Москве',art:'factory',ref:'zil',body:['В октябре 1941 года с ЗИСа отправляли станки и специалистов. Эвакуация требовала разобрать оборудование, перевезти его и заново смонтировать в тылу. Часть цехов и работников сохранилась в Москве, где производство постепенно возобновлялось.','Московские заводы выполняли разные оборонные заказы. Одни выпускали детали для ППШ-41 и реактивные боеприпасы, другие ремонтировали машины, в том числе танки. Рабочих, призванных на фронт, заменяли женщины, подростки и пенсионеры. Смена в цеху могла сочетаться с дежурством МПВО.']},
+  {tab:'Техника',title:'Техника московского тыла',art:'ppsh',ref:'ppsh',body:['Образцы показывают, какие задачи решали оружейные заводы и службы обороны города. Выберите экспонат, чтобы рассмотреть его силуэт и прочитать музейную карточку.'],equipment:true},
+  {tab:'Эвакуация',title:'Эшелоны на восток',art:'train',ref:'evac',body:['Перемещение началось до октябрьского кризиса. Вывозили архивы и музейные коллекции, станки и сырьё, сотрудников с семьями, детские учреждения. Отправить эшелон означало найти вагоны, собрать людей, упаковать имущество и определить, кто примет их на месте.','После постановления 15 октября часть органов власти и дипломатические представительства направили в Куйбышев. Туда же эвакуировали часть коллектива Большого театра. Решение по одному учреждению могло отличаться от решения по другому.'],extra:'diaries'},
+  {tab:'Метрополитен',title:'Ночлег под землёй',art:'metro',ref:'metro',body:['Платформы и тоннели во время воздушных тревог превращались в укрытия. Когда движение прекращалось, люди могли размещаться и на путях. В укрытиях устраивали медпункты, места для отдыха, выдавали книги и оказывали помощь роженицам.','Метрополитен сохранял транспортную функцию: режим работы зависел от тревог и времени суток. На «Маяковской» 6 ноября 1941 года провели торжественное заседание Моссовета. Взгляд из дневника дополняет эту историю: москвичи ориентировались по гудкам воздушной тревоги и по доступности ближайших укрытий.'],extra:'diaries'},
+  {tab:'Госпитали',title:'Город принимал раненых',art:'hospital',ref:'botkin',body:['Эвакогоспитали размещались в больницах и приспособленных зданиях, включая школы. Больница имени С. П. Боткина принимала раненых военнослужащих на протяжении войны. Тяжелораненым требовалась хирургическая помощь, другим — перевязки, питание и восстановление.','Переливания зависели от работы станций заготовки крови и добровольных доноров. За каждой операцией стояли ещё медсёстры, санитарки, водители и люди, доставлявшие медицинские материалы.'],extra:'mosWar'},
+  {tab:'Повседневность',title:'Карточки, холод и светомаскировка',art:'shop',ref:'rations',body:['В карточной системе норма зависела от категории. Дневная норма хлеба по июльской таблице — количество, которое полагалось по карточке. Дневник Н. П. Сырейщикова фиксирует очереди и выдачу других продуктов частями.','Плотные занавеси и затемнение окон были частью светомаскировки. Команды МПВО дежурили на чердаках и крышах, помогали при пожарах от зажигательных бомб. Топливо экономили, помещения согревали в том числе небольшими печками. Учёба и культурная жизнь зависели от эвакуации, тревог и наличия помещений.'],extra:'diaries',table:true}
+];
+const breadTable='<table><caption>Москва, нормы июля 1941 г.</caption><thead><tr><th scope="col">Категория</th><th scope="col">Хлеб, г в сутки</th></tr></thead><tbody><tr><td>Рабочие и ИТР, 1-я / 2-я категория</td><td>800 / 600</td></tr><tr><td>Служащие, 1-я / 2-я категория</td><td>500 / 400</td></tr><tr><td>Иждивенцы</td><td>400</td></tr><tr><td>Дети до 12 лет</td><td>400</td></tr></tbody></table>';
+function renderHall(item) {
+  const section=$('#hall-panel');
+  const text=item.body.map(p=>'<p>'+p+'</p>').join('');
+  const tools=item.equipment ? '<div class="artefacts" aria-label="Образцы техники">'+equipment.map((e,i)=>'<button type="button" data-equipment="'+i+'">'+e.tab+'</button>').join('')+'</div><div class="tech-note" id="tech-note" aria-live="polite"></div>' : '';
+  section.innerHTML='<div class="hall-text"><h3>'+item.title+'</h3>'+text+(item.table?breadTable:'')+tools+(item.equipment?'':sourceLink(item.ref))+(item.extra?'　'+sourceLink(item.extra,'Дополнительный источник ↗'):'')+'</div><div class="hall-visual">'+illustration(item.art)+'</div>';
+  if (!item.equipment) return;
+  const buttons=$$('[data-equipment]');
+  function pick(i) {
+    const e=equipment[i];
+    buttons.forEach((b,j)=>b.setAttribute('aria-pressed',String(j===i)));
+    $('#tech-note').innerHTML='<strong>'+e.name+'</strong><p>'+e.info+'</p>'+sourceLink(e.ref);
+    $('.hall-visual').innerHTML=illustration(e.art,false);
+  }
+  buttons.forEach((b,i)=>b.addEventListener('click',()=>pick(i)));
+  pick(0);
+}
+installTabs($('#hall-tabs'),$('#hall-panel'),halls,renderHall);
+const people=[
+  {name:'Михаил Гориккер',role:'Генерал-майор технических войск',art:'hedgehog',body:'В 1941 году предложил переносное стальное заграждение от бронетехники. Его имя связывает историю инженерной разработки с фотографиями московских улиц, где видны противотанковые ежи.',ref:'diaries'},
+  {name:'Иван Новиков',role:'Начальник Московского метрополитена',art:'metro',body:'Руководил метрополитеном в первый период войны. Службам подземки приходилось обеспечивать перевозки, поддерживать оборудование и организовывать доступ жителей на станции во время воздушных тревог.',ref:'metro'},
+  {name:'Иван Лихачёв',role:'Директор ЗИСа',art:'factory',body:'Руководил автомобильным заводом в период эвакуации и возобновления московского производства. История предприятия показывает, сколько работы требовалось для перебазирования станков, специалистов и целых производственных цепочек.',ref:'zil'},
+  {name:'Команды МПВО',role:'Местная противовоздушная оборона',art:'parade',body:'Дежурные следили за светомаскировкой и подавали сигналы, помогали жильцам покинуть опасные места и участвовали в ликвидации последствий налётов. Работа команд была организована по районам, учреждениям и домам.',ref:'mosWar'}
+];
+$('#people-grid').innerHTML=people.map(person=>'<article class="person"><div>'+illustration(person.art)+'</div><div><span class="index">'+person.role+'</span><h3>'+person.name+'</h3><p>'+person.body+'</p>'+sourceLink(person.ref)+'</div></article>').join('');
+function drawBibliography(){
+  $('#bibliography').innerHTML=Object.values(REFERENCES).map(([label,url])=>'<li><a href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+'</a></li>').join('');
+}
+drawBibliography();
+const archive = [
+  {kind:'gko',date:'19 октября 1941',title:'Постановление ГКО № 813',ref:'gko',collection:'РГАСПИ. Ф. 644. Оп. 1. Д. 12. Л. 167–168.',note:'Сокращённый наборный макет документа. Постановление принято 19 октября и вступило в силу на следующий день. Нажмите на фрагменты, чтобы прочитать пояснения.',
+   details:[
+    ['Дата и номер','От номера 813 можно перейти к двум версиям документа — подлинному и рассылочному экземплярам, которые описаны Президентской библиотекой.'],
+    ['Введение режима','Ограничения распространялись на город и прилегающие районы. 19 октября — дата подписания, 20 октября — дата введения осадного положения.'],
+    ['Ночное движение','С полуночи до пяти утра движение людей и транспорта ограничивалось. Для исключений требовались специальные пропуска.']
+   ]},
+  {kind:'rations',date:'Москва, 1941',title:'Продовольственная карточка',ref:'rations',collection:'Схема карточки и таблица норм из каталога выставки «Моссовет на защите Москвы».',note:'Учебный макет хлебной карточки на одного иждивенца. Откройте поля карточки, чтобы узнать, как категория, норма и талоны определяли выдачу.',
+   details:[
+    ['Категория','Хлеб получали по установленной норме. Категория «иждивенцы» включала неработающих взрослых, находившихся на содержании других лиц.'],
+    ['Вес хлеба','В июльской таблице для иждивенцев указано 400 г хлеба в день. Для рабочих и ИТР нормы были выше и зависели от подкатегории.'],
+    ['Талон','Отметки и талоны связывали право на получение с определённым сроком. По хлебным карточкам учёт был ежедневным.']
+   ]},
+  {kind:'diary',date:'15 октября 1941',title:'Дневник Н. П. Сырейщикова',ref:'diaries',collection:'Николай Петрович Сырейщиков. Дневниковая запись от 15 октября 1941 г. Публикация Музея Москвы.',note:'Коллекционер и знаток Москвы записал, как светомаскировка изменила улицу. Наборный макет передаёт один короткий фрагмент записи.',
+   quote:'Всякое освещение в Москве было погашено; но уличное движение не остановилось.',heading:'Н. П. Сырейщиков',summary:'Рядом с дневником Музей Москвы публикует фотографии города осенью 1941 года. Они дают другой тип свидетельства о том же времени.'},
+  {kind:'diary',date:'14 октября 1941',title:'Дневник П. Н. Миллера',ref:'diaries',collection:'Пётр Николаевич Миллер. Дневниковая запись от 14 октября 1941 г. Публикация Музея Москвы.',note:'Историк и москвовед отметил последствия налёта. Порядок записи показывает, как собирались городские новости: часть повреждений он увидел, о других узнал от знакомых.',
+   quote:'Разрушения есть: пока видел и слышал в районе П. К. и О.',heading:'П. Н. Миллер',summary:'Сокращение относится к Парку культуры и отдыха. Автор отдельно отмечает сообщения о выбитых стёклах на Волхонке.'},
+  {kind:'paper',date:'13 декабря 1941 · № 294',title:'«Вечерняя Москва»',ref:'vm',heading:'Провал немецкого плана окружения и взятия Москвы',quote:'В течение ночи на 13 декабря наши войска вели бои с противником на всех фронтах.',collection:'Вечерняя Москва. 1941. 13 декабря. № 294. С. 1.',note:'Номер вышел после начала контрнаступления. Крупный заголовок вынес на первую полосу сообщение о том, что попытка окружить Москву провалилась.',summary:'Заголовок и короткая цитата из утренней сводки воспроизведены по выпуску. Редакционный комментарий набран отдельной колонкой.'},
+  {kind:'paper',date:'8 ноября 1941 · № 310',title:'«Правда»',ref:'pravda',heading:'Парад войск на Красной площади',quote:'В параде принимало участие 200 танков.',collection:'Правда. 1941. 8 ноября. № 310 (8718).',note:'Газета сообщила о вчерашнем параде. В макет вынесена одна строка газетного сообщения. Цифра приведена по публикации 1941 года.',summary:'Выход номера на следующий день после парада позволил прочитать о событии и тем, кто не слышал его радиотрансляцию.'}
+];
+Object.assign(REFERENCES,{
+  vm:['«Вечерняя Москва». 1941. 13 декабря. № 294. С. 1. Оцифрованный номер.','https://djvu.online/file/91XL4rKyEFpib'],
+  pravda:['«Правда». 1941. 8 ноября. № 310 (8718). «Парад войск на Красной площади». Электронная библиотека исторических документов.','https://docs.historyrussia.org/ru/nodes/223587']
+});
+function docThumb(item,i) {
+  const rand=random(i+90);
+  const grain=Array.from({length:170},()=>{
+    const x=(rand()*235).toFixed(1),y=(rand()*210).toFixed(1),l=(1+rand()*5).toFixed(1);
+    return 'M'+x+' '+y+'h'+l;
+  }).join(' ');
+  const paper='<path d="M49 22l148 4-4 165-152-5z" fill="#a99b7e" opacity=".6"/><path d="M46 16h147v170H46z" fill="#e7d8b6" stroke="#79674b"/>';
+  const lines=Array.from({length:12},(_,i)=>'M58 '+(72+i*8)+'h'+(120-(i%4)*7)).join(' ');
+  let content='';
+  if (item.kind==='gko') {
+    content=paper+'<g fill="#57402e" text-anchor="middle" font-family="Georgia"><text x="120" y="35" font-size="9">КОМИТЕТ ОБОРОНЫ</text><text x="120" y="51" font-size="12" font-weight="bold">ПОСТАНОВЛЕНИЕ</text><text x="120" y="63" font-size="8">№ 813</text></g><path d="'+lines+'" stroke="#887357" opacity=".72"/><circle cx="158" cy="151" r="22" fill="none" stroke="#9c4f3c" stroke-width="2"/><text x="158" y="153" fill="#9c4f3c" text-anchor="middle" font-size="9" font-family="Georgia">1941</text>';
+  } else if(item.kind==='rations') {
+    const coupons=Array.from({length:25},(_,n)=>{
+      const x=55+(n%5)*26,y=84+Math.floor(n/5)*17;
+      return '<rect x="'+x+'" y="'+y+'" width="25" height="16" fill="none" stroke="#92704f" stroke-dasharray="2 1"/><text x="'+(x+12)+'" y="'+(y+11)+'" font-size="7" text-anchor="middle" fill="#4c472f">'+(n+1)+'</text>';
+    }).join('');
+    content=paper+'<text x="120" y="45" font-size="13" font-family="Georgia" fill="#65432f" text-anchor="middle">ХЛЕБНАЯ</text><text x="120" y="59" font-size="11" font-family="Georgia" fill="#65432f" text-anchor="middle">КАРТОЧКА</text><path d="M54 68h132m-132 4h132" stroke="#9d6d49"/>'+coupons;
+  } else if(item.kind==='diary') {
+    const script=Array.from({length:11},(_,n)=>{
+      const y=51+n*11,l=77+(n%3)*12;
+      return 'M63 '+y+'q10 -7 20 -2t19 0t18 -1t'+l*.28+' -1';
+    }).join(' ');
+    content=paper+'<path d="M61 18v166" stroke="#aa7364"/><path d="'+lines+'" stroke="#99866b" opacity=".31"/><text x="129" y="38" font-size="11" font-style="italic" font-family="Georgia" fill="#4a4642" text-anchor="middle">'+item.date.replace('1941','')+'</text><path d="'+script+'" fill="none" stroke="#53475c" stroke-linecap="round" stroke-width="1.25"/><path d="M49 26l-7 8m7 44-7 8m7 44-7 8m7 39-7 8" stroke="#9a8469"/>';
+  } else {
+    const mast= i===4?'ВЕЧЕРНЯЯ МОСКВА':'ПРАВДА';
+    const cols=Array.from({length:22},(_,n)=>'M'+(56+Math.floor(n/11)*65)+' '+(86+n%11*7)+'h'+(48+(n%3)*3)).join(' ');
+    content=paper+'<path d="M52 25h133m-133 3h133m-133 27h133m-133 21h133m-66 6v80" stroke="#684e37"/><text x="120" y="47" font-family="Georgia" font-size="'+(i===4?11:22)+'" font-weight="bold" text-anchor="middle" fill="#38281d">'+mast+'</text><text x="120" y="68" font-family="Georgia" text-anchor="middle" font-size="7.2" fill="#38281d">'+(i===4?'ПРОВАЛ НЕМЕЦКОГО ПЛАНА':'ПАРАД НА КРАСНОЙ ПЛОЩАДИ')+'</text><path d="'+cols+'" stroke="#8a7358" stroke-width="1.5"/><path d="M57 170h125m-125 4h125" stroke="#684e37"/>';
+  }
+  return '<svg viewBox="0 0 235 210" aria-hidden="true"><path fill="#cdbb99" d="M0 0h235v210H0z"/><path d="'+grain+'" stroke="#7b6547" opacity=".18"/>'+content+'<path d="'+grain+'" stroke="#f7edcf" opacity=".34"/><path d="M5 5h225v200H5z" stroke="#786448" opacity=".3" fill="none"/></svg>';
+}
+const lightbox=$('#lightbox');
+let openedBy=null;
+function openExhibit(title,html,trigger) {
+  openedBy=trigger;
+  $('#dialog-title').textContent=title;
+  $('#dialog-body').innerHTML=html;
+  lightbox.showModal();
+  lightbox.scrollTop=0;
+}
+lightbox.addEventListener('close',()=>{if(openedBy?.isConnected) openedBy.focus();});
+lightbox.addEventListener('click',event=>{
+  if(event.target!==lightbox) return;
+  const {left,right,top,bottom}=lightbox.getBoundingClientRect();
+  if(event.clientX<left || event.clientX>right || event.clientY<top || event.clientY>bottom) lightbox.close();
+});
+function docTip(index,text,label=text) {
+  return '<button type="button" data-note="'+index+'" aria-label="'+label+'" aria-pressed="false">'+text+'</button>';
+}
+function docMarkup(item) {
+  if(item.kind==='gko') return '<div class="doc-mast">Государственный Комитет Обороны</div><h3>Постановление № 813</h3><p>'+docTip(0,'19 октября 1941 года')+'</p><blockquote>Ввести с 20 октября 1941 г. в городе Москве и прилегающих к городу районах осадное положение.</blockquote><p>'+docTip(1,'Территория и срок')+'</p><span class="stamp">РГАСПИ · Ф. 644</span>';
+  if(item.kind==='rations') {
+    const cells=Array.from({length:30},(_,i)=>{
+      const day=String(i+1).padStart(2,'0');
+      return i===0 ? docTip(2,day,'Талон '+day) : '<span>'+day+'</span>';
+    }).join('');
+    return '<div class="doc-mast">Хлебная карточка</div><h3>Москва · 1941</h3><p>'+docTip(0,'Иждивенец')+' '+docTip(1,'400 г в сутки')+'</p><div class="coupon-grid" aria-label="Учебная сетка талонов">'+cells+'</div><span class="stamp">УЧЕБНЫЙ МАКЕТ</span>';
+  }
+  if(item.kind==='diary') return '<span class="micro">Дневниковая запись</span><h3>'+item.heading+'</h3><p>'+item.date+'</p><blockquote>«'+item.quote+'»</blockquote><p>'+item.summary+'</p>';
+  return '<div class="doc-mast">'+item.title.slice(1,-1)+'</div><p class="micro">'+item.date+' · Первая полоса</p><h3>'+item.heading+'</h3><div class="news-copy"><blockquote>«'+item.quote+'»</blockquote><p>'+item.summary+'</p></div>';
+}
+function archiveDesk(item) {
+  const ration=item.kind==='rations';
+  const reverse=ration
+    ? '<div class="doc-mast">Хлебная карточка</div><h3>Оборотная сторона</h3><p>Талоны служили для учёта выдачи хлеба по дням.</p><p>Норма на лицевой стороне относится к категории иждивенцев по московской таблице июля 1941 года.</p>'+docTip(2,'Как работал талон')+'<br><span class="stamp">УЧЕБНЫЙ МАКЕТ</span>'
+    : '<div class="doc-mast">Постановление № 813</div><h3>Порядок в городе</h3><p>С полуночи до пяти утра передвижение разрешалось по специальным пропускам. При воздушной тревоге следовали правилам московской противовоздушной обороны.</p><p>За порядок в Москве и пригородах отвечал комендант города генерал-майор К. Р. Синилов. Дела о нарушениях порядка передавались военному трибуналу.</p><p>'+docTip(2,'Движение ночью')+'</p><span class="stamp">ИЗЛОЖЕНИЕ ПУНКТОВ 2–4</span>';
+  const navigation=ration
+    ? '<button type="button" id="archive-turn" aria-pressed="false">Перевернуть</button>'
+    : '<button type="button" id="archive-prev" disabled>Назад</button><button type="button" id="archive-next">Далее</button>';
+  return '<div class="archive-desk" id="archive-desk"><div class="archive-viewport" id="archive-viewport"><div class="archive-leaf" id="archive-leaf"><div class="doc-sheet archive-front">'+docMarkup(item)+'</div><div class="doc-sheet archive-back" inert>'+reverse+'</div></div></div><div class="archive-tools" aria-label="Просмотр документа">'+navigation+'<button type="button" id="archive-zoom" aria-pressed="false">Приблизить</button><output id="archive-side">'+(ration?'Лицевая сторона':'Страница 1 из 2')+'</output></div></div>';
+}
+function attachArchiveControls(item) {
+  const leaf=$('#archive-leaf'),desk=$('#archive-desk');
+  const flip=$('#archive-turn'),prev=$('#archive-prev'),next=$('#archive-next');
+  let back=false,zoom=false;
+  function turn(showBack,focusTarget){
+    back=showBack;
+    leaf.classList.toggle('is-turned',back);
+    leaf.querySelector('.archive-front').inert=back;
+    leaf.querySelector('.archive-back').inert=!back;
+    $('#archive-side').value=item.kind==='rations' ? (back?'Оборотная сторона':'Лицевая сторона') : 'Страница '+(back?2:1)+' из 2';
+    $('#archive-viewport').scrollTop=0;
+    if(flip) flip.setAttribute('aria-pressed',String(back));
+    else {
+      prev.disabled=!back;next.disabled=back;
+      if(focusTarget) (back?prev:next).focus();
+    }
+  }
+  flip?.addEventListener('click',()=>turn(!back));
+  prev?.addEventListener('click',()=>turn(false,true));
+  next?.addEventListener('click',()=>turn(true,true));
+  $('#archive-zoom').addEventListener('click',event=>{
+    zoom=!zoom;desk.classList.toggle('is-zoom',zoom);
+    event.currentTarget.setAttribute('aria-pressed',String(zoom));
+    event.currentTarget.textContent=zoom?'Обычный размер':'Приблизить';
+  });
+}
+function openDocument(item,trigger) {
+  const annotations=item.details ? '<div id="annotation" class="annotation" aria-live="polite">Выберите выделенное поле на макете.</div>' : '';
+  const useDesk=item.kind==='gko'||item.kind==='rations';
+  const documentView=useDesk?archiveDesk(item):'<div class="doc-sheet">'+docMarkup(item)+'</div>';
+  openExhibit(item.title,documentView+'<div class="doc-details"><span class="micro">'+item.date+'</span><h3>'+item.title+'</h3><p>'+item.note+'</p>'+annotations+'<p>'+item.collection+'</p>'+sourceLink(item.ref,'Открыть архивную публикацию ↗')+'</div>',trigger);
+  if(useDesk) attachArchiveControls(item);
+  const buttons=$$('#dialog-body [data-note]');
+  buttons.forEach(button=>button.addEventListener('click',()=>{
+    buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.note===button.dataset.note)));
+    const note=item.details[Number(button.dataset.note)];
+    $('#annotation').innerHTML='<strong>'+note[0]+'</strong><p>'+note[1]+'</p>';
+  }));
+}
+const archiveGrid=$('#archive-grid');
+archive.forEach((item,i)=>{
+  const b=document.createElement('button');
+  b.type='button';b.className='archive-card';
+  b.innerHTML=docThumb(item,i)+'<small>'+item.date+'</small><strong>'+item.title+'</strong><span>Открыть экспонат ↗</span>';
+  b.addEventListener('click',()=>openDocument(item,b));
+  archiveGrid.append(b);
+});
+archiveGrid.querySelector('p')?.remove();
+
+function railwayScene(landmark,at,description,reference){
+  return {
+    focus:1.65,reference,
+    modes:['Перрон и эшелон'],
+    intro:['Перрон показан в момент погрузки. На заднем плане — характерный архитектурный элемент вокзала.'],
+    points:[[
+      {label:landmark,at,text:description},
+      {label:'Багаж',at:[-2.1,1.03,-.2],text:'Люди брали с собой вещи, которые могли унести. Оборудование, архивы и музейные предметы готовили к вывозу отдельно.'},
+      {label:'Вагоны',at:[.75,1.76,1.6],text:'Железная дорога перевозила жителей, работников учреждений и имущество. Вагоны использовали и для других перевозок военного времени.'}
+    ]]
+  };
+}
+const dioramaInfo={
+  metro:{
+    focus:1.58,
+    modes:['Укрытие','Заседание 6 ноября'],
+    intro:[
+      'Разрез показывает улицу над станцией и подземный зал, который открывали для жителей во время воздушных тревог.',
+      '6 ноября 1941 года в подземном зале состоялось торжественное заседание Моссовета. В модели выделены места для участников и площадка президиума.'
+    ],
+    points:[
+      [
+        {label:'Улица',at:[-3.5,3.55,-1.6],text:'Над платформой продолжалась городская жизнь. Верхний уровень показан условно, без масштаба глубины.'},
+        {label:'Платформа',at:[.8,.77,.35],text:'Вместо обычного ожидания поезда здесь размещались люди, спустившиеся в укрытие.'},
+        {label:'Зал станции',at:[2.76,1.85,-.65],text:'Стальные арки и колонны формируют открытый центральный зал «Маяковской».'}
+      ],
+      [
+        {label:'Улица',at:[-3.5,3.55,-1.6],text:'Глубокое заложение позволяло использовать зал во время воздушных тревог.'},
+        {label:'Места участников',at:[-.65,1.10,.1],text:'Ряды в модели показывают, как пассажирский зал мог принять участников заседания.'},
+        {label:'Президиум',at:[3.35,1.52,0],text:'Заседание посвятили 24-й годовщине Октябрьской революции.'}
+      ]
+    ]
+  },
+  factory:{
+    modes:['Производство','Подготовка к вывозу'],
+    intro:[
+      'Разрез заводского цеха показывает станки, рабочие места и погрузочные ворота. ЗИС продолжал выполнять оборонные заказы, пока часть предприятия вывозили.',
+      'При эвакуации станки разбирали, готовили к перевозке и затем устанавливали заново на тыловых площадках.'
+    ],
+    points:[
+      [
+        {label:'Станки',at:[-.55,1.25,.5],text:'Станочный парк позволял выпускать детали и выполнять разные оборонные заказы.'},
+        {label:'Подъёмная балка',at:[1,2.89,-.4],text:'Тяжёлые детали перемещали внутри цеха грузоподъёмным оборудованием.'},
+        {label:'Ворота',at:[4.16,1.25,.89],text:'Через погрузочную зону сырьё, детали и готовая продукция попадали на транспорт.'}
+      ],
+      [
+        {label:'Упакованное оборудование',at:[-.55,1.05,.5],text:'Части оборудования и оснастку готовили к погрузке и отправке в тыл.'},
+        {label:'Подъёмная балка',at:[1,2.89,-.4],text:'Подготовка крупных станков к перевозке требовала работы монтажников и грузчиков.'},
+        {label:'Погрузка',at:[4.16,1.25,.89],text:'Станки и специалисты ЗИСа отправлялись на несколько площадок, среди них Ульяновск и Миасс.'}
+      ]
+    ]
+  },
+  steel:{
+    focus:1.45,
+    modes:['Металлургический цех'],
+    intro:['В разрезе видны печи, площадка для заготовок и мостовой кран. Цех показан схематически.'],
+    points:[[
+      {label:'Печи',at:[-2.65,1.48,-.4],text:'Мартеновские цеха выплавляли сталь. Нагретый металл на схеме отмечен тёплым цветом.'},
+      {label:'Подъёмный кран',at:[.8,2.53,-.75],text:'Оборудование позволяло перемещать тяжёлые материалы по цеху.'},
+      {label:'Заготовки',at:[3,.68,1.3],text:'Заготовки из выплавленного металла поступали на дальнейшую обработку.'}
+    ]]
+  },
+  hospital:{
+    focus:1.35,
+    modes:['Корпуса и палата'],
+    intro:['Диорама показывает павильонную планировку больницы и палату в разрезе.'],
+    points:[[
+      {label:'Больничный корпус',at:[-2.65,2.47,-1.34],text:'Больница была устроена как комплекс отдельных корпусов. В годы войны здесь лечили раненых военнослужащих.'},
+      {label:'Приём раненых',at:[-1.82,.95,1.12],text:'Часть раненых доставляли в Москву санитарными эшелонами. В больнице продолжали уход и лечение.'},
+      {label:'Палата',at:[2.5,1.23,.62],text:'В палатах за пациентами ухаживали медсёстры и санитарки. Интерьер на схеме условный.'}
+    ]]
+  },
+  street:{
+    modes:['Улица в октябре 1941 года'],
+    intro:['Схема фрагмента улицы с заграждениями, по мотивам фотографии Большой Дорогомиловской осенью 1941 года.'],
+    points:[[
+      {label:'Улица',at:[-2.5,1.64,-1.48],text:'Историческая фотография показывает заграждения рядом с жилой застройкой осенью 1941 года.'},
+      {label:'Баррикада',at:[.6,.98,.29],text:'Городские заграждения меняли облик улиц. На диораме их размещение условно.'},
+      {label:'Противотанковые ежи',at:[2.65,.75,1.46],text:'На фотографиях Москвы 1941 года легко узнать характерные силуэты стальных ежей.'}
+    ]]
+  },
+  kazan:railwayScene('Ярусная башня',[3.02,3.67,-1.96],'Силуэт вокзала А. В. Щусева узнаваем по высокой ярусной башне. Перрон в модели показан условно.','kazan'),
+  yaroslav:railwayScene('Шатёр над входом',[-1.17,3.18,-1.86],'В облике Ярославского вокзала Ф. О. Шехтеля выделяется высокий шатёр над входом. Перрон в модели показан условно.','yaroslav')
+};
+const cubeFaces=[[0,3,2,1],[4,5,6,7],[0,4,7,3],[1,2,6,5],[0,1,5,4],[3,7,6,2]];
+const corners=[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]];
+const minus=(a,b)=>a.map((v,i)=>v-b[i]);
+const cross=([x,y,z],[u,v,w])=>[y*w-z*v,z*u-x*w,x*v-y*u];
+const unit=v=>{const length=Math.hypot(...v);return v.map(x=>x/length);};
+function buildDioramaModel(kind,mode) {
+  const blocks=[],facets=[];
+  function box(x,y,z,w,h,d,color){
+    blocks.push({color,vertices:corners.map(([u,v,t])=>[x+u*w*.5,y+v*h*.5,z+t*d*.5])});
+  }
+  function beam(a,b,size,color){
+    const axis=unit(minus(b,a));
+    const side=unit(cross(axis,Math.abs(axis[1])>.88?[1,0,0]:[0,1,0]));
+    const up=cross(axis,side);
+    blocks.push({color,vertices:corners.map(([u,v,t])=>a.map((value,i)=>(u<0?value:b[i])+(side[i]*v+up[i]*t)*size/2))});
+  }
+  function gabledRoof(x,y,z,w,h,d,color){
+    const lf=[x-w/2,y,z+d/2],rf=[x+w/2,y,z+d/2],front=[x,y+h,z+d/2];
+    const lb=[x-w/2,y,z-d/2],rb=[x+w/2,y,z-d/2],back=[x,y+h,z-d/2];
+    for(const points of [[lf,rf,front],[rb,lb,back],[lf,front,back,lb],[rb,back,front,rf]]) facets.push({points,color});
+  }
+  function person(x,y,z,tone,scale=1){
+    box(x,y+.42*scale,z,.23*scale,.31*scale,.17*scale,tone);
+    box(x,y+.64*scale,z,.13*scale,.14*scale,.14*scale,'#b59c77');
+    box(x,y+.73*scale,z,.155*scale,.055*scale,.15*scale,'#3b4548');
+    box(x-.05*scale,y+.135*scale,z,.081*scale,.26*scale,.093*scale,'#383537');
+    box(x+.05*scale,y+.135*scale,z,.081*scale,.26*scale,.093*scale,'#383537');
+  }
+  function crate(x,y,z,w=.53){
+    box(x,y+w*.35,z,w,w*.7,w*.7,'#987344');
+    for (const s of [-1,1]) box(x+s*w*.31,y+w*.36,z,w*.11,w*.73,w*.73,'#b18d56');
+  }
+  function track(z,span){
+    for(const offset of [-.28,.28]) box(0,.074,z+offset,span,.055,.051,'#85878a');
+    for(let x=-span/2+.16;x<span/2;x+=.43) box(x,.022,z,.15,.042,.87,'#4d3e32');
+  }
+  function carriage(x,z,width,color,shape){
+    const roof=shape==='metro'?'#607375':'#383d3e';
+    const sill=shape==='metro'?'#a49570':'#b9a66d';
+    box(x,.38,z,width,.21,.84,'#302e2e');
+    box(x,.88,z,width,.82,.92,color);
+    box(x,.55,z,width+.025,.085,.965,sill);
+    box(x,1.335,z,width+.08,.16,.94,roof);
+    box(x,1.44,z,width-.09,.065,.65,roof);
+    for(const offset of [-width*.33,width*.33])
+      for(const side of [-1,1]) box(x+offset,.21,z+side*.37,.235,.33,.16,'#282827');
+    for(let a=x-width/2+.3;a<x+width/2-.15;a+=.51){
+      box(a,1.01,z,.34,.32,.94,'#baad82');
+      box(a,1.01,z,.27,.245,.955,'#43494a');
+      box(a,1.01,z,.026,.26,.96,'#aaa789');
+    }
+  }
+  box(0,-.32,0,10.2,.61,5.35,kind==='metro'?'#57483d':'#505452');
+  box(0,-.01,0,10.22,.065,5.38,kind==='metro'?'#92846e':'#81827a');
+  if(kind==='metro'){
+    track(1.69,9.7);track(-1.59,9.7);
+    box(0,.235,.05,9.75,.42,2.22,'#a09c91');
+    for(const z of [-.99,1.1]) box(0,.456,z,9.68,.026,.095,'#c0ad82');
+    box(0,1.26,-2.51,9.91,2.6,.22,'#62564a');
+    box(0,2.62,-2.32,9.98,.22,.7,'#645448');
+    box(0,2.89,-1.9,10,.42,1.29,'#867560');
+    box(0,3.145,-1.89,10.03,.1,1.25,'#949c95');
+    for(let x=-4.1;x<4.4;x+=2.05){
+      const width=1.55;
+      box(x,3.56,-2.21,width,.74,.52,'#635b55');
+      box(x,3.969,-2.22,width+.16,.12,.68,'#b9b7aa');
+      for(const dx of [-.45,0,.45]) box(x+dx,3.61,-1.943,.24,.27,.026,'#363e42');
+    }
+    for(let x=-4.37;x<=4.4;x+=1.25){
+      for(const z of [-.82,.81]){
+        box(x,.55,z,.128,.19,.19,'#874e45');
+        box(x,1.06,z,.095,1.18,.13,'#b8bdaf');
+        box(x,1.66,z,.135,.11,.18,'#c8c4af');
+      }
+      const arch=[[-.82,1.62],[-.64,2.06],[-.29,2.28],[.29,2.28],[.63,2.06],[.82,1.62]];
+      for(let j=1;j<arch.length;j++) beam([x,arch[j-1][1],arch[j-1][0]],[x,arch[j][1],arch[j][0]],.098,'#bfc3b7');
+      box(x,2.18,.0,.24,.054,.34,'#e4cc95');
+    }
+    if(mode===0){
+      carriage(-2.45,1.68,3.76,'#566d65','metro');
+      for(let i=0;i<6;i++){
+        box(-2.13+i*.78,.505,.26,.56,.07,.29,i%2?'#7d7767':'#586365');
+        box(-2.34+i*.78,.56,.26,.15,.05,.22,'#a8a48c');
+      }
+      person(-3.46,.453,-.27,'#755343');person(2.72,.453,-.25,'#4d6c69');person(3.37,.453,.50,'#776044',.72);
+    }else{
+      box(3.48,.6,.07,1.47,.31,1.54,'#796049');
+      box(3.48,1.03,.03,.86,.103,1.25,'#a0654b');
+      for(const z of [-.43,0,.43]) person(3.56,.73,z,'#6c654e',.83);
+      for(let i=0;i<7;i++) for(const z of [-.3,.08,.46]){
+        box(-3.13+i*.66,.59,z,.27,.25,.254,'#816347');
+        person(-3.16+i*.66,.48,z,'#526467',.72);
+      }
+    }
+  }else if(kind==='factory'){
+    box(0,1.53,-2.44,10.0,3.05,.24,'#786559');
+    box(-4.92,1.55,-1.22,.21,3.09,2.51,'#76665b');
+    box(0,3.11,-2.08,10,.12,.89,'#555b5a');
+    box(0,2.76,-.4,9.55,.2,.18,'#997751');
+    box(1,2.63,-.4,.38,.18,.38,'#655a4b');
+    beam([1,2.55,-.4],[1,1.41,-.4],.035,'#b5a77c');
+    for(let x=-4.35;x<4.95;x+=1.77){
+      box(x,1.54,-2.25,.16,3.04,.22,'#535657');
+      box(x+.63,2.14,-2.287,.84,.8,.083,'#b39e74');
+      box(x+.63,2.12,-2.236,.71,.65,.037,'#4d5e60');
+      box(x+.63,2.13,-2.201,.045,.68,.035,'#bbad8b');
+      box(x+.63,2.13,-2.201,.73,.045,.035,'#bbad8b');
+    }
+    for(const z of [.1,1.64]) box(4.62,.93,z,.21,1.86,.19,'#777069');
+    box(4.62,1.86,.88,.22,.15,1.64,'#777069');
+    for (let x=-4.06;x<4.7;x+=.37) box(x,.033,1.84,.18,.016,.05,'#bf9b61');
+    for(let i=0;i<4;i++){
+      const x=-3.12+i*1.58,z=(i%2)*1.14-.55;
+      if(mode && i!==0){crate(x,.10,z,.8);crate(x+.25,.68,z,.46);continue;}
+      box(x,.36,z,1.11,.54,.57,'#4d6361');
+      box(x,.699,z,1.15,.14,.64,'#738883');
+      box(x-.34,.905,z,.4,.325,.46,'#364b4b');
+      box(x+.30,.82,z,.23,.18,.31,'#6e8077');
+      box(x-.12,.882,z,.46,.10,.094,'#a79b82');
+    }
+    person(-2.8,.05,.45,'#6f5a4b');person(2.15,.05,1.28,'#5b6c65');
+    crate(3.43,.1,.7,.61);crate(4.05,.1,1.14,.53);
+  }else if(kind==='steel'){
+    box(0,1.44,-2.49,10,2.89,.21,'#78594d');
+    box(0,2.91,-2.16,9.97,.18,.85,'#515b5d');
+    for(const x of [-3.85,-1.6,.65,2.9]){
+      box(x,1.5,-2.36,.14,3.0,.35,'#635b55');
+      box(x+.6,2.39,-2.35,.75,.4,.08,'#a0896a');
+      box(x+.6,2.39,-2.29,.61,.27,.07,'#4d5556');
+    }
+    for(const x of [-3.14,-1.09]){
+      box(x,.46,-.66,1.68,.85,1.23,'#6e4c43');
+      box(x,.96,-.72,1.71,.20,1.23,'#77645a');
+      box(x,.61,-.018,1.01,.53,.10,'#413838');
+      box(x,.56,.046,.74,.31,.045,'#b56946');
+      box(x,.53,.076,.5,.14,.025,'#de9e55');
+      box(x,1.31,-.87,.4,.62,.43,'#584941');
+      box(x,1.61,-.87,.53,.11,.51,'#80675a');
+    }
+    for(const x of [-4.32,4.37]) box(x,1.23,-.82,.23,2.46,.28,'#504f49');
+    box(0,2.43,-.82,9.04,.22,.29,'#a88754');
+    box(.79,2.31,-.82,.55,.18,.45,'#6e5c42');
+    beam([.8,2.23,-.8],[.8,1.16,-.8],.045,'#8f8170');
+    box(.8,.97,-.8,.52,.31,.49,'#574638');
+    box(.8,1.13,-.8,.59,.065,.56,'#b3885f');
+    box(2.95,.21,1.25,2.85,.33,1.26,'#6d6255');
+    for(let column=0;column<5;column++) for(let row=0;row<2;row++){
+      box(1.98+column*.48,.48+row*.17,1.23,.36,.15,.89,row%2?'#9fa09a':'#6e7673');
+    }
+    person(-2.57,.035,1.11,'#60554b');person(1.08,.035,1.45,'#63584b');
+  }else if(kind==='hospital'){
+    box(0,.075,1.41,9.75,.12,1.83,'#aa9c86');
+    box(-2.64,.96,-.95,3.9,1.84,2.43,'#ab8a72');
+    box(-2.64,.37,.296,3.9,.22,.13,'#86735e');
+    gabledRoof(-2.64,1.85,-.96,4.27,.85,2.72,'#5f7069');
+    for(const x of [-4.06,-3.31,-1.94,-1.19]){
+      box(x,1.11,.295,.49,.74,.05,'#c8b7a0');
+      box(x,1.11,.326,.37,.61,.05,'#55696b');
+      box(x,1.11,.357,.044,.61,.023,'#a7b1a6');
+    }
+    box(-2.64,.68,.36,.66,1.19,.12,'#747364');
+    box(-2.64,1.37,.464,.83,.17,.52,'#646f66');
+    box(2.18,.11,-.4,4.96,.18,3.46,'#b7a691');
+    box(2.18,1.03,-2.13,4.96,1.85,.19,'#aaa597');
+    box(4.57,1,-1.0,.19,1.79,2.12,'#b4a895');
+    for(const x of [.91,2.11,3.32]){
+      box(x,1.19,-2.01,.7,.77,.055,'#d3cbb5');
+      box(x,1.19,-1.98,.58,.64,.041,'#718b8b');
+      box(x,1.19,-1.952,.045,.61,.039,'#bdbfb0');
+    }
+    for(const x of [.65,1.94,3.25]){
+      box(x,.43,.52,.73,.14,1.59,'#a1a594');
+      box(x,.55,.46,.69,.13,1.50,'#cfccaf');
+      box(x,.647,-.03,.54,.065,.39,'#e5dbc3');
+      for(const z of [-.11,1.14]) box(x,.39,z,.72,.45,.061,'#79867d');
+      box(x,.38,.89,.63,.14,.69,'#8e9b87');
+    }
+    box(4.06,.55,-.53,.41,.71,.49,'#987e61');
+    person(-1.84,.13,1.4,'#9d9b85');person(4.05,.18,.8,'#b8b6a5');
+  }else if(kind==='street'){
+    box(0,.031,.94,10.11,.065,3.23,'#6b7273');
+    box(0,.127,-.87,10.12,.22,.53,'#a39d8b');
+    box(0,.127,2.38,10.12,.22,.42,'#949383');
+    for(const [x,h,c] of [[-3.43,2.5,'#7e6c63'],[-.35,2.83,'#8a7d70'],[2.93,2.34,'#786d61']]){
+      box(x,h/2,-1.88,2.8,h,1.36,c);
+      gabledRoof(x,h,-1.9,3.01,.53,1.53,'#53626a');
+      for(const dx of [-.88,0,.88]) for(const y of [.71,1.73]){
+        box(x+dx,y,-1.17,.37,.53,.075,'#a89b82');
+        box(x+dx,y,-1.116,.27,.43,.052,'#454b50');
+      }
+    }
+    for(let i=0;i<6;i++){
+      const x=-2.18+i*.46,z=.25+(i%2)*.11;
+      box(x,.19,z,.53,.31,.46,'#8a7963');
+      box(x+.17,.4,z,.49,.17,.44,'#988970');
+    }
+    for(const [x,z] of [[.57,1.56],[2.38,1.22],[3.63,.44]]){
+      beam([x-.41,.08,z-.3],[x+.4,.79,z+.26],.10,'#454c4d');
+      beam([x-.39,.78,z+.1],[x+.36,.06,z-.34],.10,'#535858');
+      beam([x,.42,z-.57],[x+.1,.39,z+.51],.105,'#626963');
+    }
+  }else{
+    const kazan=kind==='kazan';
+    track(1.59,9.7);
+    box(.0,.24,-.67,9.72,.42,2.25,'#aaa18c');
+    box(0,.47,.45,9.72,.055,.1,'#c7b07c');
+    const colors=kazan?['#796055','#79473e','#795750']:['#6f7463','#566b60','#746b50'];
+    box(0,1.35,-2.19,9.63,2.54,.55,colors[0]);
+    box(0,2.66,-2.23,9.8,.20,.78,'#65706d');
+    box(0,2.76,-2.3,9.62,.11,.56,'#aeb0a0');
+    if(kazan){
+      for(const [y,w,h] of [[2.89,1.44,.7],[3.35,1.16,.24],[3.63,.92,.33],[3.9,.69,.25],[4.11,.47,.15]]){
+        box(3.02,y,-1.99,w,h,w*.68,'#916756');
+        box(3.02,y+h*.5-.023,-1.99,w+.09,.054,w*.72,'#c8ac8c');
+      }
+      gabledRoof(3.02,4.2,-1.99,.55,.44,.42,'#616f68');
+    }else{
+      box(-1.16,1.49,-1.8,2.52,2.89,1.03,'#8b907c');
+      box(-1.16,2.78,-1.19,2.67,.15,.15,'#6e8472');
+      gabledRoof(-1.16,2.88,-1.8,2.85,1.17,1.31,'#547b71');
+      gabledRoof(-1.16,3.08,-1.07,1.86,.72,.27,'#749585');
+      box(-1.16,1.27,-1.25,1.04,1.81,.106,'#4c5e57');
+      for(const x of [-2.15,-.16]) box(x,1.77,-1.23,.14,1.83,.11,'#c7bca0');
+    }
+    for(let x=-4.35;x<4.85;x+=1.19){
+      box(x,1.14,-1.89,.59,1.19,.055,'#484c48');
+      box(x,1.85,-1.849,.62,.19,.058,'#b0a187');
+    }
+    for(const x of [-3.75,-1.3,1.3,3.75]) {
+      box(x,1.23,-.87,.104,1.52,.105,'#797768');
+      box(x,1.96,-.52,.32,.14,1.04,'#817c6b');
+    }
+    box(0,2.08,-.88,9.72,.11,1.27,'#6d7773');
+    for(let x=-4.45;x<4.7;x+=.44) box(x,1.99,-.22,.075,.12,.10,'#b3a584');
+    carriage(-2.45,1.59,3.8,colors[1],'rail');carriage(1.9,1.59,4.38,colors[2],'rail');
+    box(-.47,.32,1.59,.32,.12,.19,'#44413d');
+    for(const [x,z,w] of [[-2.58,-.21,.65],[-1.94,.12,.40],[-1.62,-.32,.46],[2.65,-.27,.62]]) crate(x,.47,z,w);
+    for(const [x,z,c] of [[-3.44,-.31,'#735e51'],[-1.14,.02,'#667771'],[1.06,-.05,'#7d7057'],[2.09,-.42,'#8a6852'],[3.6,-.06,'#546567']]) person(x,.47,z,c);
+  }
+  const boxFacets=blocks.flatMap(({vertices,color})=>cubeFaces.map(indices=>({points:indices.map(i=>vertices[i]),color})));
+  return [...boxFacets,...facets].map(({points,color})=>({points,color,normal:unit(cross(minus(points[1],points[0]),minus(points[2],points[0])))}));
+}
+
+const dioramaCanvas=document.createElement('canvas'),dioramaGL=document.createElement('canvas');
+const mapExperience=$('#map-experience'),mapOverview=$('#map-overview'),mapDiorama=$('#map-diorama');
+const dioramaStage=$('#diorama-stage'),mapOverviewInfo=$('#map-overview-info'),mapDioramaInfo=$('#map-diorama-info');
+dioramaCanvas.className='diorama-flat';dioramaGL.className='diorama-gl';dioramaGL.hidden=true;
+for(const canvas of [dioramaCanvas,dioramaGL]) canvas.setAttribute('aria-hidden','true');
+let dioramaView=null,dioramaRenderer=null,dioramaWorld=null,dioramaCamera=null,dioramaMesh=null,dioramaFrame=0,dioramaDrag=null;
+const initialDioramaView=()=>({yaw:.51,pitch:.46,zoom:1});
+new ResizeObserver(queueDiorama).observe(dioramaStage);
+dioramaStage.prepend(dioramaCanvas,dioramaGL);
+attachDioramaOrbit(dioramaStage);
+function queueDiorama(){
+  if(dioramaView && !dioramaFrame) dioramaFrame=requestAnimationFrame(renderDiorama);
+}
+function reloadDioramaMesh(){
+  if(!dioramaRenderer || !dioramaView) return;
+  const T=threeRuntime,coords=[],colors=[],indices=[],tint=new T.Color();
+  for(const {points,color} of dioramaView.faces) {
+    const start=coords.length/3;
+    tint.set(color);
+    for(const p of points){
+      coords.push(...p);
+      colors.push(tint.r,tint.g,tint.b);
+    }
+    for(let i=1;i<points.length-1;i++) indices.push(start,start+i,start+i+1);
+  }
+  const geo=new T.BufferGeometry();
+  geo.setAttribute('position',new T.Float32BufferAttribute(coords,3));
+  geo.setAttribute('color',new T.Float32BufferAttribute(colors,3));geo.setIndex(indices);geo.computeVertexNormals();
+  if(dioramaMesh){
+    dioramaWorld.remove(dioramaMesh);dioramaMesh.geometry.dispose();
+  }
+  const material=dioramaMesh?.material || new T.MeshStandardMaterial({vertexColors:true,roughness:.91});
+  dioramaMesh=new T.Mesh(geo,material);dioramaWorld.add(dioramaMesh);
+}
+function mountDioramaWebGL(){
+  const T=threeRuntime;
+  if(!T || !dioramaView || dioramaGL.dataset.lost) return;
+  if(!dioramaRenderer){
+    const context=dioramaGL.getContext('webgl2',{antialias:true,alpha:true});
+    if(!context) return;
+    try{dioramaRenderer=new T.WebGLRenderer({canvas:dioramaGL,context,antialias:true,alpha:true});}
+    catch{return;}
+    dioramaRenderer.setPixelRatio(Math.min(devicePixelRatio,1.5));
+    dioramaWorld=new T.Scene();
+    dioramaWorld.add(new T.HemisphereLight(0xcbd8d4,0x6c5041,1.8));
+    const sun=new T.DirectionalLight(0xffe2b3,2.05);sun.position.set(-7,10,7);dioramaWorld.add(sun);
+    dioramaCamera=new T.OrthographicCamera(-1,1,1,-1,.1,80);
+  }
+  reloadDioramaMesh();queueDiorama();
+}
+dioramaGL.addEventListener('webglcontextlost',event=>{
+  event.preventDefault();dioramaGL.dataset.lost='true';
+  dioramaGL.hidden=true;dioramaCanvas.hidden=false;queueDiorama();
+},{capture:true});
+function renderDiorama(){
+  dioramaFrame=0;
+  if(!dioramaView) return;
+  const {clientWidth:w,clientHeight:h}=dioramaStage;
+  if(!w || !h) return;
+  const {yaw,pitch,zoom,faces,place}=dioramaView;
+  const cy=Math.cos(yaw),sy=Math.sin(yaw),ce=Math.cos(pitch),se=Math.sin(pitch);
+  const focus=dioramaInfo[place.scene].focus ?? 1.02,scale=Math.min(w/12.85,h/9.2)*zoom;
+  const axis=[sy*ce,se,cy*ce];
+  function project([x,y,z]){
+    const horizontal=cy*x-sy*z,depth=sy*x+cy*z;
+    return [w*.5+horizontal*scale,h*.5-(ce*(y-focus)-se*depth)*scale,ce*depth+se*(y-focus)];
+  }
+  if(dioramaRenderer && !dioramaGL.dataset.lost) {
+    dioramaGL.hidden=false;
+    const size=dioramaRenderer.getSize(new threeRuntime.Vector2());
+    if(size.x!==w || size.y!==h) dioramaRenderer.setSize(w,h,false);
+    dioramaCamera.left=-w/(2*scale);dioramaCamera.right=w/(2*scale);
+    dioramaCamera.top=h/(2*scale);dioramaCamera.bottom=-h/(2*scale);
+    dioramaCamera.position.set(axis[0]*19,focus+axis[1]*19,axis[2]*19);
+    dioramaCamera.lookAt(0,focus,0);dioramaCamera.updateProjectionMatrix();
+    dioramaRenderer.render(dioramaWorld,dioramaCamera);
+    dioramaCanvas.hidden=true;
+  } else {
+    const ratio=Math.min(devicePixelRatio,1.55),pw=Math.round(w*ratio),ph=Math.round(h*ratio);
+    if(dioramaCanvas.width!==pw || dioramaCanvas.height!==ph){dioramaCanvas.width=pw;dioramaCanvas.height=ph;}
+    const ctx=dioramaCanvas.getContext('2d');
+    ctx.setTransform(pw/w,0,0,ph/h,0,0);
+    ctx.clearRect(0,0,w,h);
+    const visible=faces.filter(({normal})=>normal.reduce((sum,n,i)=>sum+n*axis[i],0)>.001).map(face=>{
+      const points=face.points.map(project),depth=points.reduce((sum,p)=>sum+p[2],0)/points.length;
+      return {...face,points,depth};
+    }).sort((a,b)=>a.depth-b.depth);
+    for(const {points,color,normal} of visible){
+      const depthLight=normal[1]>.25?.13:normal[2]>.5?.037:-.16;
+      polygon(ctx,points,color);
+      polygon(ctx,points,depthLight>0?'rgba(255,230,178,'+depthLight+')':'rgba(15,18,27,'+Math.abs(depthLight)+')');
+    }
+  }
+  const points=dioramaInfo[place.scene].points[dioramaView.mode];
+  $$('#diorama-stage .diorama-pin').forEach((pin,i)=>{
+    const [x,y]=project(points[i].at);
+    pin.style.left=x+'px';pin.style.top=y+'px';
+    pin.hidden=x<19 || x>w-19 || y<18 || y>h-19;
+  });
+}
+function adjustDiorama(action){
+  if(!dioramaView) return;
+  const view=dioramaView;
+  if(action==='reset') Object.assign(view,initialDioramaView());
+  if(action==='left') view.yaw-=Math.PI/9;
+  if(action==='right') view.yaw+=Math.PI/9;
+  if(action==='up') view.pitch=clamp(view.pitch+.1,.2,1.04);
+  if(action==='down') view.pitch=clamp(view.pitch-.1,.2,1.04);
+  if(action==='closer') view.zoom=clamp(view.zoom+.18,.75,1.55);
+  if(action==='farther') view.zoom=clamp(view.zoom-.18,.75,1.55);
+  $('[data-scene-action=closer]').disabled=view.zoom>=1.55;
+  $('[data-scene-action=farther]').disabled=view.zoom<=.75;
+  queueDiorama();
+}
+function pickDioramaPoint(index){
+  const view=dioramaView,point=dioramaInfo[view.place.scene].points[view.mode][index];
+  mapExperience.querySelectorAll('[data-scene-point]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.scenePoint)===index)));
+  $('#diorama-detail').innerHTML='<strong>'+point.label+'</strong><p>'+point.text+'</p>';
+}
+function setDioramaMode(index){
+  const view=dioramaView,info=dioramaInfo[view.place.scene],points=info.points[index];
+  view.mode=index;view.faces=buildDioramaModel(view.place.scene,index);
+  mapDioramaInfo.querySelectorAll('[data-scene-mode]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.sceneMode)===index)));
+  $('#diorama-intro').textContent=info.intro[index];
+  $('#diorama-stage-points').innerHTML=points.map((p,i)=>'<button type="button" tabindex="-1" aria-label="'+p.label+'" aria-pressed="false" class="diorama-pin" data-scene-point="'+i+'">'+(i+1)+'</button>').join('');
+  $('#diorama-points').innerHTML=points.map((p,i)=>'<button type="button" aria-pressed="false" data-scene-point="'+i+'">'+(i+1)+' · '+p.label+'</button>').join('');
+  pickDioramaPoint(0);reloadDioramaMesh();queueDiorama();
+}
+function attachDioramaOrbit(stage){
+  stage.addEventListener('pointerdown',event=>{
+    if(!dioramaView || !event.isPrimary || event.button!==0 || event.target.closest('button')) return;
+    stage.setPointerCapture(event.pointerId);stage.focus({preventScroll:true});
+    dioramaDrag={id:event.pointerId,x:event.clientX,y:event.clientY,yaw:dioramaView.yaw,pitch:dioramaView.pitch};
+  });
+  stage.addEventListener('pointermove',event=>{
+    if(dioramaDrag?.id!==event.pointerId) return;
+    dioramaView.yaw=dioramaDrag.yaw+(event.clientX-dioramaDrag.x)*.012;
+    dioramaView.pitch=clamp(dioramaDrag.pitch+(event.clientY-dioramaDrag.y)*.008,.2,1.04);
+    queueDiorama();
+  });
+  stage.addEventListener('lostpointercapture',()=>{dioramaDrag=null;});
+  stage.addEventListener('keydown',event=>{
+    const keys={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down','+':'closer','=':'closer','-':'farther',Home:'reset'};
+    if(!keys[event.key]) return;
+    event.preventDefault();adjustDiorama(keys[event.key]);
+  });
+}
+function openDiorama(place,trigger){
+  const info=dioramaInfo[place.scene];
+  const modes=info.modes.length>1 ? '<div class="diorama-modes" aria-label="Состояние диорамы">'+info.modes.map((mode,i)=>'<button type="button" data-scene-mode="'+i+'" aria-pressed="false">'+mode+'</button>').join('')+'</div>' : '';
+  const architecture=info.reference ? sourceLink(info.reference,'Архитектура вокзала ↗') : '';
+  mapDioramaInfo.innerHTML=
+    '<span class="index">'+place.area+'</span><h3 id="diorama-title">'+place.name+'</h3>'+
+    modes+'<p id="diorama-intro"></p><div class="diorama-points" id="diorama-points" aria-label="Детали сцены"></div>'+
+    '<div class="diorama-detail" id="diorama-detail" aria-live="polite"></div>'+
+    '<details><summary>История места</summary><p>'+place.text+'</p></details>'+
+    '<div class="diorama-sources">'+sourceLink(place.source)+architecture+'</div>';
+  dioramaView={place,trigger,...initialDioramaView(),mode:0,faces:[]};
+  setDioramaMode(0);
+  adjustDiorama('reset');
+  if(!dioramaRenderer) mountDioramaWebGL();
+  mapDiorama.inert=false;mapOverview.inert=true;
+  mapOverviewInfo.hidden=true;mapDioramaInfo.hidden=false;
+  $('#map-aside').scrollTop=0;
+  mapExperience.dataset.view='detail';
+  focusMapControl($('#diorama-back'));
+  scheduleNavigation();
+}
+function focusMapControl(control){
+  const {top,bottom}=control.getBoundingClientRect();
+  control.focus({preventScroll:true});
+  if(top<$('.mast').getBoundingClientRect().bottom+12 || bottom>innerHeight-12) {
+    control.scrollIntoView({block:'center',behavior:reduced.matches?'instant':'smooth'});
+  }
+}
+function closeDiorama(){
+  if(!dioramaView) return;
+  const {trigger,place}=dioramaView;
+  dioramaView=null;dioramaDrag=null;
+  cancelAnimationFrame(dioramaFrame);dioramaFrame=0;
+  mapExperience.dataset.view='overview';
+  mapDiorama.inert=true;mapOverview.inert=false;
+  mapDioramaInfo.hidden=true;mapOverviewInfo.hidden=false;
+  $('#map-aside').scrollTop=0;
+  selectPlace(-1);
+  if(trigger?.isConnected && !trigger.hidden) focusMapControl(trigger);
+  else focusMapControl($('#map-list [data-place="'+mapPlaces.indexOf(place)+'"]'));
+  scheduleNavigation();
+}
+mapExperience.addEventListener('click',event=>{
+  const button=event.target.closest('button');
+  if(!button || !dioramaView) return;
+  if(button.id==='diorama-back') return closeDiorama();
+  if(button.dataset.sceneAction) adjustDiorama(button.dataset.sceneAction);
+  if(button.dataset.sceneMode!==undefined) setDioramaMode(Number(button.dataset.sceneMode));
+  if(button.dataset.scenePoint!==undefined) pickDioramaPoint(Number(button.dataset.scenePoint));
+});
+mapExperience.addEventListener('keydown',event=>{
+  if(event.key==='Escape'){event.preventDefault();closeDiorama();}
+});
+
+const AudioEngine=window.AudioContext || window.webkitAudioContext;
+let soundEnabled=false, audio=null, master=null, analyser=null, wind=null, beatTimer=0, mode='off';
+const soundButton=$('#sound');
+function audioSetup() {
+  if(audio || !AudioEngine) return;
+  audio=new AudioEngine();
+  master=audio.createGain(); master.gain.value=0.65;
+  analyser=audio.createAnalyser();analyser.fftSize=256;analyser.smoothingTimeConstant=.78;
+  master.connect(analyser);analyser.connect(audio.destination);
+}
+function noise(seconds,type,gain) {
+  const length=Math.max(1,Math.floor(audio.sampleRate*seconds));
+  const buffer=audio.createBuffer(1,length,audio.sampleRate),samples=buffer.getChannelData(0);
+  let smoothed=0;
+  for(let i=0;i<length;i++){
+    const n=Math.random()*2-1;smoothed=(smoothed+n*.043)/1.043;
+    samples[i]=type==='wind'?smoothed*3.5:n*.65+smoothed*.35;
+  }
+  const item=audio.createBufferSource();item.buffer=buffer;
+  const filter=audio.createBiquadFilter();
+  filter.type=type==='wind'?'lowpass':'bandpass';
+  filter.frequency.value=type==='wind'?235:1250;filter.Q.value=.36;
+  const level=audio.createGain();level.gain.value=gain;
+  item.connect(filter).connect(level).connect(master);
+  return {item,level};
+}
+function changeWind(needed) {
+  if(!audio) return;
+  if(!needed && wind){
+    wind.level.gain.setTargetAtTime(.0001,audio.currentTime,.1);
+    wind.item.stop(audio.currentTime+.42);wind=null;
+  } else if(needed && !wind) {
+    wind=noise(4.2,'wind',.0001);
+    wind.item.loop=true;wind.item.start();
+    wind.level.gain.setTargetAtTime(.053,audio.currentTime,.34);
+  }
+}
+function tone(when,frequency,level,decay,type='sine'){
+  if(!audio || !soundEnabled) return;
+  const osc=audio.createOscillator(),gain=audio.createGain();
+  osc.type=type;osc.frequency.setValueAtTime(frequency,when);
+  osc.frequency.exponentialRampToValueAtTime(frequency*.73,when+decay);
+  gain.gain.setValueAtTime(.0001,when);gain.gain.exponentialRampToValueAtTime(level,when+.003);
+  gain.gain.exponentialRampToValueAtTime(.0001,when+decay);
+  osc.connect(gain).connect(master);osc.start(when);osc.stop(when+decay+.01);
+}
+function tuningNoise(){
+  if(!audio || !soundEnabled) return;
+  const {item,level}=noise(.18,'radio',.038);const now=audio.currentTime;
+  level.gain.exponentialRampToValueAtTime(.0001,now+.175);item.start(now);
+}
+function stopMetronome(){
+  if(beatTimer){clearInterval(beatTimer);beatTimer=0;}
+}
+function startMetronome(){
+  stopMetronome();
+  if(!audio || !soundEnabled) return;
+  let at=audio.currentTime+.035,beat=0;
+  function schedule(){
+    while(at<audio.currentTime+.13){
+      if(at>=audio.currentTime-.01) {
+        const when=Math.max(at,audio.currentTime);
+        tone(when,beat%2?680:990,.112,.055,'triangle');
+        tone(when,beat%2?285:380,.043,.037);
+      }
+      beat++;at+=1;
+    }
+  }
+  schedule();beatTimer=setInterval(schedule,55);
+}
+function applySound(enabled) {
+  if(enabled) audioSetup();
+  soundEnabled=enabled;
+  soundButton.setAttribute('aria-pressed',String(enabled));
+  soundButton.querySelector('span').textContent=enabled?'Звук вкл.':'Звук выкл.';
+  if(audio) {
+    if(enabled) audio.resume().catch(()=>{});
+    master.gain.setTargetAtTime(enabled ? .65 : 0,audio.currentTime,.028);
+    changeWind(enabled && mode==='off' && !radioQuiet);
+  }
+  if(!enabled) {
+    stopMetronome();stopSpeech();
+    if(mode!=='off') setMode('off');
+  }
+}
+soundButton.addEventListener('click',()=>{radioQuiet=false;applySound(!soundEnabled);});
+$('#start-tour').addEventListener('click',()=>{radioQuiet=false;applySound(true);});
+document.addEventListener('click',event=>{
+  if(!soundEnabled || !audio || mode!=='off' || !event.target.closest('[role="tab"], .pin, .archive-card, #poster-prev, #poster-next')) return;
+  tone(audio.currentTime,430,.028,.07,'triangle');
+});
+const broadcasts=[
+  {date:'11 октября 1941',label:'Утреннее сообщение',quote:'В течение ночи на 11 октября наши войска вели бои с противником на всём фронте и особенно напряжённые на Вяземском и Брянском направлениях.',context:'В середине октября сообщения с фронта читали на фоне эвакуации и воздушных тревог.',ref:'radioOct'},
+  {date:'7 ноября 1941',label:'Сообщение за день',quote:'В течение 7 ноября наши войска вели бои с противником на всех фронтах.',context:'В день парада война оставалась главной темой сводок.',ref:'radioNov'},
+  {date:'13 декабря 1941',label:'Утреннее сообщение',quote:archive[4].quote,context:'В том же номере «Вечерней Москвы» вышло сообщение о провале немецкого плана окружения и взятия Москвы.',ref:'vm'}
+];
+Object.assign(REFERENCES,{
+  radioOct:['Совинформбюро. Утреннее сообщение от 11 октября 1941 г. Публикация текста.','https://www.great-country.ru/articles/sssr/vov/sib/194110.html'],
+  radioNov:['Совинформбюро. Сообщение от 7 ноября 1941 г. Публикация текста в «Смоленской газете».','https://smolgazeta.ru/svodki-sovinformbyuro/81278-ot-sovetskogo-informbyuro-7-noyabrya-1941-goda.html']
+});
+const tuner=$('#broadcast'),radioStatus=$('#radio-status');
+const radioKnob=$('#radio-knob'),radioGrille=$('#radio-grille'),radioCabinet=$('#radio-cabinet');
+let speech=null, radioQuiet=false;
+const spectrum=new Uint8Array(128);
+tuner.innerHTML=broadcasts.map((b,i)=>'<option value="'+i+'">'+b.date+'</option>').join('');
+function chosenBroadcast(){return broadcasts[Number(tuner.value)];}
+function drawBroadcast(){
+  const b=chosenBroadcast();
+  const index=Number(tuner.value);
+  radioKnob.style.setProperty('--dial-angle',(-110+index*110)+'deg');
+  radioKnob.setAttribute('aria-valuenow',String(index+1));
+  radioKnob.setAttribute('aria-valuetext',b.date);
+  $('#knob-date').textContent=b.date;
+  $('#radio-text').innerHTML='<span class="index">'+b.label+' · '+b.date+'</span><blockquote id="radio-quote">«'+b.quote+'»</blockquote><p>'+b.context+'</p>'+sourceLink(b.ref,'Публикация сводки ↗');
+}
+function stopSpeech(){
+  const previous=speech;speech=null;
+  if(previous && 'speechSynthesis' in window) speechSynthesis.cancel();
+}
+function speakBroadcast(){
+  const b=chosenBroadcast();
+  const synth=window.speechSynthesis;
+  const voice=synth?.getVoices().find(voice=>/^ru(?:[-_]|$)/i.test(voice.lang)&&voice.localService);
+  if(!voice || !window.SpeechSynthesisUtterance) {
+    radioStatus.textContent='Русский голос недоступен. Читайте текст сводки выше.';
+    return;
+  }
+  const utterance=new SpeechSynthesisUtterance(b.quote);
+  utterance.lang='ru-RU';utterance.voice=voice;utterance.rate=.84;utterance.pitch=.87;utterance.volume=.8;
+  utterance.onstart=()=>{if(speech===utterance) radioStatus.textContent='Идёт чтение сводки';};
+  utterance.onboundary=event=>{
+    const quote=$('#radio-quote');
+    if(speech!==utterance || !quote || !event.charLength) return;
+    const end=event.charIndex+event.charLength;
+    const mark=document.createElement('mark');mark.textContent=b.quote.slice(event.charIndex,end);
+    quote.replaceChildren('«'+b.quote.slice(0,event.charIndex),mark,b.quote.slice(end)+'»');
+  };
+  function finished(label){
+    if(speech!==utterance) return;
+    speech=null;drawBroadcast();radioStatus.textContent=label;
+  }
+  utterance.onend=()=>finished('Чтение завершено');
+  utterance.onerror=()=>finished('Озвучка недоступна. Читайте текст сводки выше.');
+  speech=utterance;synth.speak(utterance);
+}
+function setMode(next){
+  stopMetronome();stopSpeech();drawBroadcast();
+  mode=next;radioQuiet=mode==='off';
+  $$('#radio-controls button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+  if(mode==='off'){
+    changeWind(false);radioStatus.textContent='Тишина';wakeRadio();return;
+  }
+  applySound(true);changeWind(false);tuningNoise();
+  if(mode==='beat'){
+    startMetronome();radioStatus.textContent=audio?'Метроном · 60 уд/мин':'Звук недоступен в этом браузере';
+  } else speakBroadcast();
+  wakeRadio();
+}
+$$('#radio-controls button').forEach(button=>button.addEventListener('click',()=>setMode(button.dataset.mode)));
+$('#radio-play').addEventListener('click',()=>setMode('speech'));
+tuner.addEventListener('change',()=>{
+  if(mode==='speech') setMode('speech');
+  else {drawBroadcast();tuningNoise();wakeRadio();}
+});
+function tuneTo(index){
+  const next=String(clamp(index,0,broadcasts.length-1));
+  if(tuner.value===next) return;
+  tuner.value=next;
+  tuner.dispatchEvent(new Event('change'));
+}
+let tuningDrag=null;
+radioKnob.addEventListener('pointerdown',event=>{
+  if(!event.isPrimary || event.button!==0) return;
+  radioKnob.focus({preventScroll:true});
+  radioKnob.setPointerCapture(event.pointerId);
+  tuningDrag={id:event.pointerId,x:event.clientX,y:event.clientY,value:Number(tuner.value),moved:false};
+});
+radioKnob.addEventListener('pointermove',event=>{
+  if(tuningDrag?.id!==event.pointerId) return;
+  const dx=event.clientX-tuningDrag.x,dy=tuningDrag.y-event.clientY;
+  const delta=Math.abs(dx)>=Math.abs(dy)?dx:dy;
+  if(Math.abs(delta)>5) tuningDrag.moved=true;
+  tuneTo(tuningDrag.value+Math.sign(delta)*Math.floor((Math.abs(delta)+18)/36));
+});
+radioKnob.addEventListener('pointerup',event=>{
+  if(tuningDrag?.id!==event.pointerId) return;
+  if(!tuningDrag.moved) tuneTo((tuningDrag.value+1)%broadcasts.length);
+  tuningDrag=null;
+});
+radioKnob.addEventListener('lostpointercapture',()=>{tuningDrag=null;});
+radioKnob.addEventListener('keydown',event=>{
+  const index=Number(tuner.value);
+  const keys={ArrowRight:index+1,ArrowUp:index+1,ArrowLeft:index-1,ArrowDown:index-1,Home:0,End:broadcasts.length-1};
+  if(!(event.key in keys)) return;
+  event.preventDefault();tuneTo(keys[event.key]);
+});
+const radioRest=radioCabinet.parentElement;
+radioRest.addEventListener('pointermove',event=>{
+  if(event.pointerType!=='mouse' || reduced.matches || tuningDrag) return;
+  const r=radioRest.getBoundingClientRect();
+  radioCabinet.style.setProperty('--radio-x',(4-(event.clientY-r.top-r.height/2)/r.height*6)+'deg');
+  radioCabinet.style.setProperty('--radio-y',(-6+(event.clientX-r.left-r.width/2)/r.width*8)+'deg');
+});
+radioRest.addEventListener('pointerleave',()=>{
+  radioCabinet.style.removeProperty('--radio-x');radioCabinet.style.removeProperty('--radio-y');
+});
+drawBroadcast();
+const wakeRadio=surface($('#radio-dial'),(ctx,w,h,now)=>{
+  ctx.fillStyle='#161914';ctx.fillRect(0,0,w,h);
+  const spacing=w/34,baseline=h*.81;
+  for(let i=0;i<35;i++){
+    stroke(ctx,[[i*spacing,0],[i*spacing,h]],'#b8a3652c',1);
+    stroke(ctx,[[i*spacing,baseline],[i*spacing,baseline+(i%5===0?11:5)]],'#bda56e',1);
+  }
+  for(let i=1;i<6;i++) stroke(ctx,[[0,i*h/6],[w,i*h/6]],'#ab9d6522',1);
+  if(analyser && soundEnabled) analyser.getByteFrequencyData(spectrum);
+  else spectrum.fill(0);
+  const t=reduced.matches?0:now/1000;
+  const peak=spectrum.subarray(0,35).reduce((highest,value)=>Math.max(highest,value),0)/255;
+  radioGrille.style.setProperty('--radio-signal',speech ? .64+Math.sin(t*7)*.21 : peak);
+  for(let i=0;i<35;i++){
+    const idle=mode==='speech'&&speech?7+3*Math.sin(t*8+i*.73):0;
+    const amplitude=2+Math.max(idle,spectrum[i]/255*h*.72);
+    ctx.fillStyle='rgba(214,173,96,'+(.42+(i%7)*.063)+')';
+    ctx.fillRect(i*spacing+1,baseline-amplitude,Math.max(1,spacing-3),amplitude);
+  }
+  const marker=w*(.2+Number(tuner.value)*.3);
+  stroke(ctx,[[marker,h*.12],[marker,h*.83]],'#d49164',1);
+  ctx.fillStyle='#e1c78c';ctx.fillRect(marker-3,h*.12,6,2);
+});
+
+const posters=[
+  {num:'0005',date:'27 июня 1941',title:'Чего Гитлер хочет и что получит',artist:'М. М. Черемных · текст Литбригады',ref:'tass5',palette:['#e7c181','#9d392f','#283831','#d28952'],summary:'Два кадра сталкивают планы агрессора и их предполагаемый исход. Этот приём связывает раннюю мастерскую ТАСС с традицией «Окон РОСТА».',motif:'duo'},
+  {num:'0506',date:'18 июня 1942',title:'Приближается время возмездия',artist:'П. П. Соколов-Скаля',ref:'tass506',palette:['#d3bf8c','#902d2b','#293c35','#a78a51'],summary:'В подписи к плакату ожидаемое соединение фронтов связано с союзом государств. Русское название дано в переводе музейного каталога.',motif:'forces'},
+  {num:'0528',date:'14 июля 1942',title:'Наши гвардейцы',artist:'П. П. Соколов-Скаля · текст А. И. Машистова',ref:'tass528',palette:['#e0c48d','#a5422f','#363e32','#bb9553'],summary:'Плакат строится как последовательность эпизодов. Текст и изображение направляют взгляд от верхней сцены к нижней. Русское название дано в переводе каталога.',motif:'guards'},
+  {num:'0589',date:'25 октября 1942',title:'Неприступная твердыня',artist:'Кукрыниксы · текст Демьяна Бедного',ref:'tass589',palette:['#d9c28f','#9b3b30','#303c3c','#bd9254'],summary:'Сатирический календарь высмеивает обещания взять Москву. Нарочито бессмысленные даты отсылают к «Запискам сумасшедшего» Гоголя. Название дано в переводе каталога.',motif:'calendar'}
+];
+Object.assign(REFERENCES,{
+  tass5:['Черемных М. М. «Чего Гитлер хочет и что получит». Окно ТАСС № 0005. 27 июня 1941 г.','https://archive.artic.edu/tass/203954'],
+  tass506:['Соколов-Скаля П. П. The Time for Vengeance is Approaching. Окно ТАСС № 0506. 18 июня 1942 г.','https://archive.artic.edu/tass/159595'],
+  tass528:['Соколов-Скаля П. П., Машистов А. И. Our Guards. Окно ТАСС № 0528. 14 июля 1942 г.','https://archive.artic.edu/tass/209844'],
+  tass589:['Кукрыниксы, Демьян Бедный. Impregnable Stronghold. Окно ТАСС № 0589. 25 октября 1942 г.','https://archive.artic.edu/tass/205727']
+});
+function posterArt(poster) {
+  const [paper,red,ink,yellow]=poster.palette;
+  const shape=(d,color)=>'<path d="'+d+'" fill="'+color+'"/>';
+  const label=(x,y,text,px,color=ink)=>'<text x="'+x+'" y="'+y+'" font-family="Georgia,serif" font-weight="bold" font-size="'+px+'" fill="'+color+'" text-anchor="middle">'+text+'</text>';
+  const layer=(d,color)=>'<path d="'+d+'" fill="none" stroke="'+color+'" stroke-width="1.7"/>';
+  const motif={
+    duo:shape('M27 68h176v81H27z M27 161h176v81H27z',yellow)+shape('M108 83l56 7 9 12-39 2-4 17 26 19H72l10-29-12-9zm6 94 10 10 23-12 10 17-16 15 18 18H92l8-17-18-7 7-19z',ink)+shape('M30 143h170v8H30zm0 94h170v8H30z M163 177l33 12-36 15z',red)+label(49,89,'I',17,paper)+label(49,182,'II',17,paper)+layer('M34 72h162m-162 94h162M63 108l-24 18m34-4-22 14m117 69 20-12m-26 27 25-8',paper),
+    forces:shape('M24 63h182v176H24z',ink)+shape('M24 80l92 69-92 19zm182-9-79 81 79 26z',red)+shape('M24 210l96-48 86 42v35H24z',yellow)+shape('M108 116l12-7 13 16-5 22 18 27 4 44h-62l6-48 17-24z',ink)+layer('M33 97l62 46m100-49-54 55m-102 59 46-22m61-2 43 23',paper),
+    guards:shape('M28 60h174v56H28zm0 68h174v56H28zm0 68h174v55H28z',yellow)+shape('M28 60h174v5H28zm0 68h174v5H28zm0 68h174v5H28z',red)+shape('M46 114l13-28 13-8 15 11 19 25zm37 68 21-28 23-11 15 16 17 23zm30 67 22-32 21-9 16 17 12 24z',ink)+shape('M72 82l39-7-25 16zm56 59 39-7-29 17zm28 66 42-2-27 14z',red)+layer('M37 105h160m-160 67h160m-160 67h160',paper),
+    calendar:shape('M24 59h182v191H24z',yellow)+shape('M24 250v-38h37v-20h15v-26l13-30 12 31v83zm120 0v-80l16-39 16 39v16h30v64z',ink)+shape('M58 67l82 10-8 55-82-10z M91 118l71 19-13 50-66-18z M48 170l65-5 2 49-70 10z',paper)+layer('M57 88l74 8m-76 2 64 8m-29 34 60 16m-62-5 51 16m-90 24 57-4m-57 14 54-4',ink)+label(97,85,'1941',13,red)+label(125,140,'1942',11,red)+shape('M164 74h21v20h19v7h-19v20h-8v-20h-20v-7h20V74z',red)
+  }[poster.motif];
+  const rand=random(Number(poster.num));
+  const grain=Array.from({length:460},()=>{
+    const x=(rand()*230).toFixed(1),y=(rand()*302).toFixed(1),l=(.2+rand()*3).toFixed(1);
+    return 'M'+x+' '+y+'h'+l;
+  }).join(' ');
+  return '<svg viewBox="0 0 230 302" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+shape('M0 0h230v302H0z',paper)+layer('M9 9h212v284H9z M15 44h200 M15 263h200',ink)+label(115,35,'ОКНО ТАСС',21,red)+motif+label(115,282,'№ '+poster.num,13)+ '<path d="'+grain+'" stroke="'+ink+'" opacity=".23" stroke-width=".55"/></svg>';
+}
+const gallery=$('#poster-gallery');
+let posterIndex=0;
+const posterButtons=posters.map((p,i)=>{
+  const b=document.createElement('button');
+  b.type='button'; b.innerHTML=posterArt(p);
+  b.setAttribute('aria-label',p.title);
+  b.addEventListener('click',()=> i===posterIndex ? openPoster(b) : selectPoster(i));
+  gallery.append(b);
+  return b;
+});
+function selectPoster(index){
+  posterIndex=(index+posters.length)%posters.length;
+  const p=posters[posterIndex];
+  posterButtons.forEach((button,i)=>{
+    const shift=(i-posterIndex+posters.length)%posters.length;
+    const offset=shift===posters.length-1?-1:shift;
+    button.style.setProperty('--offset',offset);
+    button.style.setProperty('--depth',Math.abs(offset));
+    button.style.setProperty('--opacity',offset===0?1:Math.abs(offset)===1?.79:0);
+    button.style.setProperty('--layer',3-Math.abs(offset));
+    button.hidden=Math.abs(offset)>1;
+    button.tabIndex=offset===0?0:-1;
+  });
+  $('#poster-index').textContent=(posterIndex+1)+' / '+posters.length;
+  $('#poster-caption').innerHTML='<span class="index">№ '+p.num+' · '+p.date+'</span><strong>'+p.title+'</strong><p>'+p.artist+'</p><p>'+p.summary+'</p>'+sourceLink(p.ref,'Музейный оригинал ↗');
+}
+function openPoster(trigger){
+  const p=posters[posterIndex];
+  openExhibit(p.title,'<div class="poster-full">'+posterArt(p)+'</div><div class="doc-details"><span class="micro">Окно ТАСС № '+p.num+' · '+p.date+'</span><h3>'+p.title+'</h3><p>'+p.artist+'</p><p>'+p.summary+'</p><p>Векторная интерпретация по мотивам плаката.</p>'+sourceLink(p.ref,'Музейный оригинал ↗')+'</div>',trigger);
+}
+$('#poster-prev').addEventListener('click',()=>selectPoster(posterIndex-1));
+$('#poster-next').addEventListener('click',()=>selectPoster(posterIndex+1));
+$('#poster-open').addEventListener('click',event=>openPoster(event.currentTarget));
+gallery.addEventListener('keydown',event=>{
+  if(event.key!=='ArrowLeft' && event.key!=='ArrowRight') return;
+  event.preventDefault();selectPoster(posterIndex+(event.key==='ArrowLeft'?-1:1));posterButtons[posterIndex].focus();
+});
+selectPoster(0);
+
+const filmChapters = [
+  ['7 ноября 1941','Парад на Красной площади','Парад состоялся, пока Москва оставалась прифронтовым городом.'],
+  ['Ноябрь 1941','Ночные улицы Москвы','Светомаскировка меняла вид города, а команды МПВО дежурили на улицах и крышах.'],
+  ['5–6 декабря 1941','Под Москвой','Началось контрнаступление советских войск. В городе продолжалась работа тыла.'],
+  ['Весна 1942','Город после зимы','Весной восстанавливали городское хозяйство и расчищали улицы.']
+];
+const filmCanvas=$('#film-canvas'),filmCtx=filmCanvas.getContext('2d'),filmSeek=$('#film-seek'),filmPlay=$('#film-play');
+let filmTime=0,launchTime=0,filmFrame=0,isPlaying=false,lastChapter=-1,lastFrame=-1;
+function filmPerson(ctx,x,y,size,phase,color){
+  ctx.save();ctx.translate(x,y);ctx.scale(size,size);
+  const stride=Math.sin(phase)*7;
+  ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(0,-37,6,7,0,0,Math.PI*2);ctx.fill();
+  polygon(ctx,[[-7,-30],[7,-31],[11,-9],[-11,-9]],color);
+  stroke(ctx,[[-6,-10],[-5-stride,0],[-9-stride,2]],color,4);
+  stroke(ctx,[[4,-10],[4+stride,0],[1+stride,2]],color,4);
+  stroke(ctx,[[-7,-26],[-10+stride*.5,-15]],'#8c7758',2);
+  ctx.restore();
+}
+function filmScene(ctx,scene,t){
+  const sky=ctx.createLinearGradient(0,0,0,315);
+  sky.addColorStop(0,scene===1?'#382e23':'#8d785e');sky.addColorStop(1,'#d2b68b');
+  ctx.fillStyle=sky;ctx.fillRect(0,0,800,450);
+  const w=800,h=450,rand=random(140+scene);
+  if(scene<=1){
+    const horizon=scene===0?298:274;
+    for(let i=0;i<14;i++){
+      const frontY=horizon-rand()*80,ww=45+rand()*45;
+      cityRoof(ctx,i*60-19-(scene===1?t*2:0),frontY,ww,horizon-frontY+8,scene===0?1:2,rand());
+    }
+    if(scene===0) {
+      polygon(ctx,[[0,225],[558,218],[558,307],[0,309]],'#6c5142');
+      for(let i=0;i<25;i++) ctx.fillRect(i*22,212+(i%3),11,13);
+      cityTower(ctx,641,305,76,222);
+    } else {
+      for(let i=0;i<3;i++){
+        const x=390+i*157,y=280,tx=x-170+Math.sin(t*.58+i)*220;
+        const light=ctx.createLinearGradient(x,y,tx,0);
+        light.addColorStop(0,'#fff3b990');light.addColorStop(1,'#fff3b909');
+        polygon(ctx,[[x,y],[tx-40,0],[tx+42,0]],light);
+      }
+      balloon(ctx,622,114,14,-.14);
+    }
+    polygon(ctx,[[0,horizon],[w,horizon-5],[w,h],[0,h]],'#ad956e');
+    for(let i=0;i<9;i++) stroke(ctx,[[398,288],[i*118-90,h]],'#78694e60',1.3);
+    for(let i=0;i<7;i++) {
+      const y=299+i*i*4.9;
+      if(y>443) break;
+      stroke(ctx,[[0,y],[800,y-6]],'#87765180',1.2);
+    }
+    if(scene===0) {
+      for(let row=0;row<3;row++) for(let i=0;i<11;i++) {
+        const x=((i*66 + 35*t*(1+row*.18)+row*31)%910)-53;
+        filmPerson(ctx,x,330+row*24,1+row*.18,t*8+i*.82+row,'#3e3328');
+      }
+    } else {
+      streetObstacle(ctx,643,362,1.05);streetObstacle(ctx,734,331,.58);
+      filmPerson(ctx,553-t*17,338,.82,t*6,'#4d3b2f');
+    }
+  } else {
+    polygon(ctx,[[0,264],[138,240],[265,261],[415,214],[555,223],[675,247],[800,220],[800,450],[0,450]],'#b29b75');
+    polygon(ctx,[[0,309],[140,278],[295,291],[437,261],[599,279],[800,258],[800,450],[0,450]],'#dbc19a');
+    polygon(ctx,[[422,269],[443,266],[598,450],[246,450]],'#bfa57a');
+    for(let i=0;i<15;i++){
+      const x=rand()*800,y=258+rand()*50,size=.45+rand()*1.15;
+      if(x>354&&x<467) continue;
+      stroke(ctx,[[x,y],[x+size*2,y-size*53]],'#524337',size*1.7);
+      stroke(ctx,[[x+size*2,y-size*35],[x-size*10,y-size*47]],'#5f503e',1);
+      stroke(ctx,[[x+size*3,y-size*24],[x+size*14,y-size*37]],'#5f503e',1);
+    }
+    if(scene===2) {
+      for(let i=0;i<7;i++){
+        const s=1.15-i*.106-t*.022;
+        filmPerson(ctx,455+i*19-t*18,346-i*8-t*3,s,t*8+i,'#4b3b2a');
+      }
+    } else {
+      cityRoof(ctx,45,227,182,77,1,.75);cityRoof(ctx,563,207,202,103,2,.62);
+      for(let i=0;i<5;i++){
+        const x=301+i*37+t*7;
+        filmPerson(ctx,x,344+i*2,1,2*t+i,'#574030');
+        stroke(ctx,[[x+6,324+i*2],[x+26,346+i*2+Math.sin(t*4+i)*4]],'#795b3e',2);
+      }
+    }
+  }
+  ctx.fillStyle='#ac805c24';ctx.fillRect(0,0,w,h);
+}
+function renderFilm(){
+  const frame=Math.min(671,Math.floor(filmTime*24));
+  const scene=Math.min(3,Math.floor(filmTime/7)),t=filmTime-scene*7;
+  filmSeek.value=filmTime;
+  $('#film-time').value='0:'+String(Math.floor(filmTime)).padStart(2,'0')+' / 0:28';
+  if(lastChapter!==scene){
+    const c=filmChapters[scene];
+    $('#film-chapter').innerHTML='<strong>'+c[0]+' · '+c[1]+'</strong><br>'+c[2];
+    lastChapter=scene;
+  }
+  if(frame===lastFrame) return;
+  lastFrame=frame;
+  const ctx=filmCtx,w=800,h=450,r= random(frame+4275);
+  ctx.save();ctx.translate((r()-.5)*2,(r()-.5)*2);
+  filmScene(ctx,scene,t);
+  for(let i=0;i<390;i++){
+    const x=r()*w,y=r()*h,d=r();
+    ctx.fillStyle=i%2?'#e4d5b542':'#251a0e3b';ctx.fillRect(x,y,d*2.7+.4,d*1.8+.4);
+  }
+  if(frame%24<8) {
+    const sx=95+(Math.floor(frame/24)*143)%665;
+    stroke(ctx,[[sx,12],[sx+1,428]],'#ffeccb31',.9);
+  }
+  const v=ctx.createRadialGradient(w/2,h/2,114,w/2,h/2,478);
+  v.addColorStop(0,'#2b211500');v.addColorStop(1,'#201609e3');ctx.fillStyle=v;ctx.fillRect(0,0,w,h);
+  ctx.fillStyle='rgba(21,14,9,'+(r()*.095)+')';ctx.fillRect(0,0,w,h);
+  ctx.fillStyle='#21160bce';ctx.fillRect(0,360,w,90);
+  ctx.fillStyle='#eaddbc';ctx.textAlign='center';ctx.font='17px Georgia';ctx.fillText(filmChapters[scene][0],400,389);
+  ctx.font='29px Georgia';ctx.fillText(filmChapters[scene][1],400,424);
+  ctx.restore();
+}
+function pauseFilm(){
+  isPlaying=false;cancelAnimationFrame(filmFrame);
+  filmPlay.textContent=filmTime>=28?'С начала':'Пуск';
+}
+function tickFilm(now){
+  filmTime=clamp((now-launchTime)/1000,0,28);
+  renderFilm();
+  if(filmTime>=28) pauseFilm();
+  else filmFrame=requestAnimationFrame(tickFilm);
+}
+filmPlay.addEventListener('click',()=>{
+  if(isPlaying){pauseFilm();return;}
+  if(filmTime>=28) filmTime=0;
+  isPlaying=true;launchTime=clock()-filmTime*1000;filmPlay.textContent='Пауза';
+  filmFrame=requestAnimationFrame(tickFilm);
+});
+filmSeek.addEventListener('input',()=>{
+  filmTime=Number(filmSeek.value);launchTime=clock()-filmTime*1000;
+  if(!isPlaying) filmPlay.textContent=filmTime>=28?'С начала':'Пуск';
+  renderFilm();
+});
+document.addEventListener('visibilitychange',()=>{if(document.hidden && isPlaying) pauseFilm();});
+new IntersectionObserver(([entry])=>{if(!entry.isIntersecting && isPlaying) pauseFilm();}).observe(filmCanvas);
+$('#film-links').innerHTML=sourceLink('filmArchive','Смотреть архивный фильм ↗')+'　'+sourceLink('film','Каталог Госфильмофонда ↗');
+renderFilm();
+drawBibliography();
+scheduleNavigation();
+</script>
+</body>
+</html>
